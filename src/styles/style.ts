@@ -23,6 +23,10 @@ export const GlobalStyle = createGlobalStyle`
     src: url("/fonts/LexendExa.ttf");
   }
 
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("/fonts/Montserrat.ttf");
+  }
   
   body {
     background-color: var(--primary-bg);

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+  position: static;
+  position: -webkit-sticky;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -17,7 +19,6 @@ export const HeaderContainer = styled.div`
     color: ${({ theme }) => theme.secundaryColor};
     text-decoration: none;
   }
-
 `;
 
 export const LogoName = styled.h3`
@@ -27,5 +28,3 @@ export const LogoName = styled.h3`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
-
-
