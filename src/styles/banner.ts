@@ -12,16 +12,14 @@ export const BannerContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-
-  width: 1550px;
-  max-width: 100%;
-  margin: 8rem auto 0 auto;
+  margin: 8rem auto 20rem auto;
 `;
 
 export const BannerText = styled.div`
   place-self: end center;
+  margin-top:50px;
 
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: "LexendExa";
   color: ${({ theme }) => theme.primaryColor};
 
@@ -30,28 +28,14 @@ export const BannerText = styled.div`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
     font-family: "Montserrat";
     color: ${({ theme }) => theme.secundaryColor};
-    margin-top: 35px;
+    margin:35px 0 85px 0;
     font-weight: 300;
   }
 
-  .btn-linkedin {
-    display: block;
-    width: 250px;
-    max-width: 100%;
-    padding: 15px 25px;
-    margin-top: 65px;
-
-    background-color: ${({ theme }) => theme.btnBg};
-    border-radius: 3px;
-
-    color: ${({ theme }) => theme.primaryColor};
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-  }
 
   .text-banner-wrapper{
     position: relative;
@@ -63,14 +47,15 @@ export const BannerText = styled.div`
 
 export const CircleDecoration = styled.div`
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   place-self: start end;
 
   border-radius: 50%;
   background: -webkit-gradient(120deg, #3c69ff, #243f99);
   background: -moz-linear-gradient(120deg, #3c69ff, #243f99);
   background: linear-gradient(120deg, #3c69ff, #243f99);
+  box-shadow: -10px 4px 30px  #3c69ff;
 
   .circle {
     position: absolute;
@@ -81,15 +66,15 @@ export const CircleDecoration = styled.div`
     height: 97%;
     background: ${({ theme }) => theme.primaryBg};
     border-radius: 50%;
-    box-shadow: inset 0px 4px 30px #3c69ff;
+    box-shadow: inset -5px 4px 30px #3c69ff;
   }
 `;
 
 export const BannerDecoration = styled.div<BannerDecorationProps>`
   position: relative;
-  width: 250px;
+  width: 200px;
   max-width: 100%;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: #272727;
   left: ${props => props.position == 'top' ? '0' : '100%'};
 `;

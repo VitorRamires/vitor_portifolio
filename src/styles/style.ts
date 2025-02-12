@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -32,9 +32,38 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--primary-bg);
   }
 
-  .centralize {
-    width: 1250px;
-    max-width: 100%;
-    margin: 0 auto;
+  img{
+    width: 100%;
+    height: 100%;
   }
+`;
+
+export const Centralize = styled.div`
+  width: 1350px;
+  max-width: 100%;
+  margin: 0 auto;
+`;
+
+export const Btn = styled.button`
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  padding: 15px 25px;
+
+  background-color: ${({ theme }) => theme.btnBg};
+  border-radius: 3px;
+  border: none;
+
+  color: ${({ theme }) => theme.primaryColor};
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
+`;
+
+export const NormalText = styled.p`
+  color: ${({ theme }) => theme.secundaryColorColor};
+  font-weight: lighter;
+  font-size: 0.9rem;
 `;

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  position: static;
-  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -18,6 +17,7 @@ export const HeaderContainer = styled.div`
   a {
     color: ${({ theme }) => theme.secundaryColor};
     text-decoration: none;
+    font-size: 1.5rem;
   }
 `;
 

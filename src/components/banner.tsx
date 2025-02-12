@@ -4,6 +4,7 @@ import {
   BannerText,
   CircleDecoration,
 } from "../styles/banner";
+import { Btn } from "../styles/style";
 
 export function Banner() {
   return (
@@ -18,9 +19,7 @@ export function Banner() {
               desenvolvimento front-end focando nas tecnologias mais usadas no
               mercado
             </p>
-            <a href="#" className="btn-linkedin">
-              Linkedin
-            </a>
+            <Btn>Linkedin</Btn>
           </div>
           <BannerDecoration position={"bottom"} />
         </BannerText>
