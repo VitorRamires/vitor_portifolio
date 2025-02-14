@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Centralize = styled.div`
-  width: 1350px;
+  width: 1450px;
   max-width: 100%;
   margin: 0 auto;
 `;
@@ -66,4 +66,28 @@ export const NormalText = styled.p`
   color: ${({ theme }) => theme.secundaryColorColor};
   font-weight: lighter;
   font-size: 0.9rem;
+`;
+
+export const Title = styled.h2`
+  position: relative;
+  font-size: 2.2rem;
+  color: ${({ theme }) => theme.primaryColor};
+  text-align: center;
+  font-family: 'LexendExa';
+  font-weight: 300;
+  margin-bottom:55px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &::after {
+    content: "";
+    position: relative;
+    width: 14px;
+    height: 25px;
+    border: 3px solid ${({theme}) => theme.terciaryColor};
+  }
 `;

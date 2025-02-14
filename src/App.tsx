@@ -4,6 +4,7 @@ import { themeGlobal } from "./styles/themes/themeGlobal";
 import { Centralize, GlobalStyle } from "./styles/style";
 import { Banner } from "./components/banner";
 import { About } from "./components/about";
+import { Projects } from "./components/projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Centralize>
           <Banner />
           <About />
+          <Projects />
         </Centralize>
       </ThemeProvider>
     </>

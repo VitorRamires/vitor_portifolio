@@ -5,33 +5,24 @@ import {
   AboutTextBox,
   AboutWrapper,
   DecorationAbout,
-  ImagesAbout,
 } from "../styles/about";
-import { Btn, NormalText } from "../styles/style";
+import { NormalText } from "../styles/style";
 
 export function About() {
   return (
     <>
       <AboutContainer>
         <AboutWrapper>
-          <ImagesAbout>
-            <img
-              className="open-tag-img"
-              src="/icons/open-tag.svg"
-              alt="open-tag html icon"
-            />
-
-            <h3 className="title">Sobre mim</h3>
-
-            <img
-              className="close-tag-img"
-              src="/icons/close-tag.svg"
-              alt="close-tag html icon"
-            />
-          </ImagesAbout>
+          <img
+            className="close-tag-img"
+            src="/icons/close-tag.svg"
+            alt="close-tag html icon"
+          />
 
           <AboutInfo>
             <AboutTextBox>
+              <h3 className="title">Sobre mim</h3>
+
               <div className="name-role">
                 <h2>Vitor Ramires</h2>
                 <h4>Dev front-end</h4>
@@ -61,8 +52,6 @@ export function About() {
                   <img src="/icons/github.svg" alt="" />
                 </div>
               </div>
-
-              <Btn>Baixar Currículo</Btn>
             </AboutLinks>
           </AboutInfo>
         </AboutWrapper>

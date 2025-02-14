@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   position: sticky;
+  top:0%;
   width: 100%;
+  z-index: 99;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   padding: 55px;
 
   background-color: ${({ theme }) => theme.primaryBg};

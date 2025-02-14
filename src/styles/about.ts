@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
 
 export const AboutWrapper = styled.div`
   position: relative;
-  width: 90%;
+  width: 80%;
   padding: 75px 55px;
   margin: 0 auto;
 
@@ -25,24 +25,11 @@ export const AboutWrapper = styled.div`
   gap: 60px;
 
   z-index: 2;
-`;
 
-export const ImagesAbout = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap:80px;
-  font-size: 1.6rem;
-  color: ${({theme}) => theme.primaryColor};
-
-  place-self:center;
-
-  .close-tag-img,
-  .open-tag-img {
-    width: 150px;
+  .close-tag-img {
+    width: 270px;
     height: auto;
-  
+    place-self: center;
   }
 `;
 
@@ -68,7 +55,7 @@ export const AboutTextBox = styled.div`
     }
 
     h4 {
-      color: #e0e0e0;
+      color:rgb(192, 192, 192);
       font-weight: 400;
     }
   }
