@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 55px;
+  padding: 25px 50px;
 
   background-color: ${({ theme }) => theme.primaryBg};
 
@@ -21,7 +21,7 @@ export const HeaderContainer = styled.div`
   a {
     color: ${({ theme }) => theme.secundaryColor};
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
 

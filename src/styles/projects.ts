@@ -43,7 +43,6 @@ export const Project = styled.div<ProjectProps>`
     height: calc(100% - 10px);
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 2px;
 
     display: flex;
     align-items: center;
@@ -58,8 +57,11 @@ export const Project = styled.div<ProjectProps>`
   }
 
   img {
-    border: 5px solid ${({ theme }) => theme.terciaryColor};
-    border-radius: 7px;
+    border-image: linear-gradient(to right, #3c69ff 0%, #243f99 100%) 1;
+    box-shadow: 0 0 30px 10px rgba(60, 105, 255, 0.26);
+    border-width: 5px;
+    border-style: solid;
+
     object-fit: cover;
   }
 

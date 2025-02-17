@@ -8,14 +8,13 @@ export function Projects() {
   return (
     <>
       <ProjectContainer>
-        <Title>Projetos</Title>
+        <Title square-axis="ver">Projetos</Title>
 
         <ProjectWrapper>
           {allProjects.map((project) => {
             return (
               <Project key={project.name}>
                 <div className="project-image">
-                  
                   <div className="project-name">
                     <p>{project.name}</p>
                   </div>

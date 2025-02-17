@@ -16,7 +16,7 @@ export function Banner() {
             <h2>Desenvolvedor front-end</h2>
             <p>
               Atualmente focando em aperfeiçoar minhas habilidades no
-              desenvolvimento front-end focando nas tecnologias mais usadas no
+              desenvolvimento front-end atuando nas tecnologias mais usadas do
               mercado
             </p>
             <Btn>Linkedin</Btn>

@@ -1,5 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+interface TitleProps {
+  squareAxis?: "hor" | "ver";
+}
+
 export const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
@@ -68,14 +72,15 @@ export const NormalText = styled.p`
   font-size: 0.9rem;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h2<TitleProps>`
   position: relative;
-  font-size: 2.2rem;
+  width: max-content;
+  margin: 0 auto 55px auto;
+
+  font-size: 2.5rem;
   color: ${({ theme }) => theme.primaryColor};
-  text-align: center;
-  font-family: 'LexendExa';
-  font-weight: 300;
-  margin-bottom:55px;
+  font-family: "LexendExa";
+  font-weight: 400;
 
   display: flex;
   flex-direction: column-reverse;
@@ -88,6 +93,6 @@ export const Title = styled.h2`
     position: relative;
     width: 14px;
     height: 25px;
-    border: 3px solid ${({theme}) => theme.terciaryColor};
+    border: 3px solid ${({ theme }) => theme.terciaryColor};
   }
 `;
