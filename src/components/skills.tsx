@@ -8,6 +8,7 @@ export function Skills() {
   return (
     <>
       <SkillsContainer>
+        
         <SkillsInfo>
           <Title square-axis="hor">Habilidades</Title>
           <div className="skills-description">
@@ -38,6 +39,7 @@ export function Skills() {
             </div>
           </div>
         </SkillsIcons>
+
       </SkillsContainer>
     </>
   );

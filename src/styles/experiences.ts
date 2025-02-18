@@ -44,7 +44,7 @@ export const Experience = styled.div`
       display: flex;
       align-items: center;
       justify-content: start;
-      gap: 55px;
+      gap: 30px;
     }
 
     h3::after {
