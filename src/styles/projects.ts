@@ -9,7 +9,7 @@ export const ProjectContainer = styled.div`
   position: relative;
   width: 100%;
 
-  margin-top: 25rem;
+  margin-top: 20rem;
 `;
 
 export const ProjectWrapper = styled.div`

@@ -1,9 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-interface TitleProps {
-  squareAxis?: "hor" | "ver";
-}
-
 export const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
@@ -72,7 +68,7 @@ export const NormalText = styled.p`
   font-size: 0.9rem;
 `;
 
-export const Title = styled.h2<TitleProps>`
+export const Title = styled.h2`
   position: relative;
   width: max-content;
   margin: 0 auto 55px auto;

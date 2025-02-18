@@ -6,6 +6,7 @@ import { Banner } from "./components/banner";
 import { About } from "./components/about";
 import { Projects } from "./components/projects";
 import { Skills } from "./components/skills";
+import { Experiences } from "./components/experiences";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <About />
           <Projects />
           <Skills />
+          <Experiences />
         </Centralize>
       </ThemeProvider>
     </>
