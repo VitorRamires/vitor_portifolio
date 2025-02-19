@@ -30,10 +30,19 @@ export const AboutWrapper = styled.div`
     width: 270px;
     height: auto;
     place-self: center;
+
+    @media screen and (max-width: 630px) {
+      width: 60%;
+    }
   }
 
   @media screen and (max-width: 1026px) {
     grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 630px) {
+    width: 100%;
+    padding: 75px 25px;
   }
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   position: sticky;
-  top:0%;
+  top: 0%;
   width: 100%;
   z-index: 99;
 
@@ -16,12 +16,16 @@ export const HeaderContainer = styled.div`
   background-color: ${({ theme }) => theme.primaryBg};
 
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  font-family: "LexendExa", "Montserrat";
+  font-family: "LexendExa";
 
   a {
     color: ${({ theme }) => theme.secundaryColor};
     text-decoration: none;
     font-size: 1.3rem;
+
+    @media screen and (max-width: 820px) {
+      display: none;
+    }
   }
 `;
 

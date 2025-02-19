@@ -64,8 +64,12 @@ export const Btn = styled.button`
 
 export const NormalText = styled.p`
   color: ${({ theme }) => theme.secundaryColorColor};
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 0.9rem;
+
+  @media screen and (max-width:350px){
+    font-size: 0.75rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -90,5 +94,9 @@ export const Title = styled.h2`
     width: 14px;
     height: 25px;
     border: 3px solid ${({ theme }) => theme.terciaryColor};
+  }
+
+  @media screen and (max-width: 380px) {
+    font-size: 2rem;
   }
 `;

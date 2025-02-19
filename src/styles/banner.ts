@@ -48,6 +48,10 @@ export const BannerText = styled.div`
 
   h2 {
     font-weight: 400;
+
+    @media screen and (max-width: 350px) {
+      font-size: 1.4rem;
+    }
   }
 
   p {
@@ -70,6 +74,12 @@ export const BannerText = styled.div`
       text-align: center;
       margin: 35px auto;
     }
+
+    @media screen and (max-width: 350px) {
+      p {
+        font-size: 0.8rem;
+      }
+    }
   }
 
   .box-decoration-mobile {
@@ -85,12 +95,17 @@ export const BannerText = styled.div`
       grid-template-columns: 1fr 1fr;
       place-items: center;
       gap: 300px;
+      gap: 10px;
 
       div {
-        width: 100%;
+        max-width: 100%;
         display: block !important;
         left: unset;
       }
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
     }
   }
 
@@ -134,5 +149,10 @@ export const CircleDecoration = styled.div`
   @media screen and (max-width: 1026px) {
     place-self: center;
     order: -1;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 260px;
+    height: 270px;
   }
 `;

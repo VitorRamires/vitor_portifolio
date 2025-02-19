@@ -16,6 +16,10 @@ export const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
+
+  @media screen and (max-width: 510px) {
+    display: block;
+  }
 `;
 
 export const Project = styled.div<ProjectProps>`
@@ -71,7 +75,7 @@ export const Project = styled.div<ProjectProps>`
 
     p {
       margin: 25px 0;
-      font-family: 100;
+      font-weight: 200;
       line-height: 1.5;
     }
 
@@ -82,5 +86,9 @@ export const Project = styled.div<ProjectProps>`
       font-weight: 300;
       cursor: pointer;
     }
+  }
+
+  @media screen and (max-width: 510px) {
+    margin-top: 45px;
   }
 `;

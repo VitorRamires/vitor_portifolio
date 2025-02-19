@@ -17,7 +17,7 @@ export const ExperiencesContainer = styled.div`
 
   p {
     font-family: "Montserrat";
-    margin-top: 15px;
+    margin: 15px 0;
 
     font-size: 0.9rem;
     color: ${({ theme }) => theme.secundaryColor};
@@ -28,13 +28,13 @@ export const ExperiencesContainer = styled.div`
 export const Experience = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding:70px 50px;
+  padding: 70px 50px;
 
   border-radius: 7px;
   margin: 4em 0;
 
-  &:nth-child(even){
-    background-color: ${({theme}) => theme.secundaryBg};
+  &:nth-child(even) {
+    background-color: ${({ theme }) => theme.secundaryBg};
     box-shadow: 8px 8px 3px 0 rgba(0, 0, 0, 0.25);
   }
 
@@ -56,6 +56,32 @@ export const Experience = styled.div`
       background-color: ${({ theme }) => theme.btnBg};
 
       box-shadow: 0 0 15px 3px rgba(60, 105, 255, 0.26);
+
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      &::after {
+        content: "";
+        position: relative;
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: ${({ theme }) => theme.btnBg};
+
+        box-shadow: 0 0 15px 3px rgba(60, 105, 255, 0.26);
+      }
     }
   }
+
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+
 `;
+
