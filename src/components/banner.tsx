@@ -22,6 +22,10 @@ export function Banner() {
             <Btn>Linkedin</Btn>
           </div>
           <BannerDecoration position={"bottom"} />
+          <div className="box-decoration-mobile">
+            <BannerDecoration />
+            <BannerDecoration />
+          </div>
         </BannerText>
 
         <CircleDecoration>

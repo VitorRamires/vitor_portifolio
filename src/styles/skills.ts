@@ -5,7 +5,7 @@ export const SkillsContainer = styled.div`
   grid-template-columns: 1fr 0.7fr;
   gap: 5px;
 
-  margin-top: 20rem;
+  margin-top: 15rem;
 `;
 
 export const SkillsInfo = styled.div`

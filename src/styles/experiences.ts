@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ExperiencesContainer = styled.div`
-  margin-top: 20rem;
+  margin-top: 15rem;
 
   h2 {
     margin: 0 auto 125px auto !important;
