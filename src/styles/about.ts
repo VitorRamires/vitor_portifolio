@@ -31,11 +31,19 @@ export const AboutWrapper = styled.div`
     height: auto;
     place-self: center;
   }
+
+  @media screen and (max-width: 1026px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const AboutInfo = styled.div`
   line-height: 1.5;
   color: ${({ theme }) => theme.primaryColor};
+
+  @media screen and (max-width: 1026px) {
+    text-align: center;
+  }
 `;
 
 export const AboutTextBox = styled.div`
@@ -55,7 +63,7 @@ export const AboutTextBox = styled.div`
     }
 
     h4 {
-      color:rgb(192, 192, 192);
+      color: rgb(192, 192, 192);
       font-weight: 400;
     }
   }
@@ -91,12 +99,17 @@ export const AboutLinks = styled.div`
       height: 35px;
     }
   }
+
+  @media screen and (max-width: 1026px) {
+    display: block;
+  }
 `;
 
 export const DecorationAbout = styled.div`
   position: absolute;
   bottom: -10%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   height: 150px;
 
@@ -106,7 +119,7 @@ export const DecorationAbout = styled.div`
   z-index: 1;
 
   border-image: linear-gradient(to right, #3c69ff 0%, #243f99 100%) 1;
-  border-radius: 5px;  // NOT WORKING!
+  border-radius: 5px; // NOT WORKING!
   border-width: 4px;
   border-style: solid;
   padding: 5px;

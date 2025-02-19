@@ -78,7 +78,7 @@ export const BannerText = styled.div`
     justify-content: space-between;
     margin-top: 7rem;
     display: none;
-    padding:0 25px;
+    padding: 0 25px;
 
     @media screen and (max-width: 1026px) {
       display: grid;
@@ -94,9 +94,8 @@ export const BannerText = styled.div`
     }
   }
 
-  @media screen and (max-width:1026px){
+  @media screen and (max-width: 1026px) {
     width: 100%;
-
   }
 
   @media screen and (max-width: 1266px) {
@@ -106,7 +105,6 @@ export const BannerText = styled.div`
       font-size: 1rem;
     }
   }
-  
 `;
 
 export const CircleDecoration = styled.div`

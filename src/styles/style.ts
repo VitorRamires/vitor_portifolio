@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Centralize = styled.div`
   width: 1450px;
-  max-width: 100%;
+  max-width: 95%;
   margin: 0 auto;
 `;
 

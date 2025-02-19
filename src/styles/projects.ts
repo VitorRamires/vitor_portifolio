@@ -14,7 +14,7 @@ export const ProjectContainer = styled.div`
 
 export const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
 `;
 
@@ -23,7 +23,7 @@ export const Project = styled.div<ProjectProps>`
   position: relative;
   color: ${({ theme }) => theme.primaryColor};
   cursor: pointer;
-  margin-top:15px;
+  margin-top: 15px;
 
   .project-image {
     position: relative;
