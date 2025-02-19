@@ -6,13 +6,37 @@ export const SkillsContainer = styled.div`
   gap: 5px;
 
   margin-top: 15rem;
+
+  @media screen and (max-width: 1270px) {
+    grid-template-columns: 1fr;
+
+    .skills-description {
+      margin-bottom: 55px;
+      display: block;
+      text-align: center;
+
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1026px) {
+    .skills-description {
+      display: none;
+    }
+  }
 `;
 
 export const SkillsInfo = styled.div`
   font-family: "Montserrat";
 
   h2 {
-    margin: 0 0 75px 0 !important;
+    margin: 0 0 75px 0%;
+
+    @media screen and (max-width: 1270px) {
+      margin: 0 auto 75px auto;
+    }
   }
 
   h3 {
@@ -44,7 +68,7 @@ export const SkillsIcons = styled.div`
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-    place-items: center;
+    place-items: start center;
     gap: 40px;
 
     background-color: ${({ theme }) => theme.secundaryBg};
@@ -78,5 +102,16 @@ export const SkillsIcons = styled.div`
       width: 90%;
       height: auto;
     }
+  }
+`;
+
+export const SkillContext = styled.div`
+  color: ${({ theme }) => theme.primaryColor};
+  font-family: "LexendExa";
+  text-align: center;
+
+  p {
+    margin-top: 15px;
+    font-size: 0.7rem;
   }
 `;

@@ -1,4 +1,9 @@
-import { SkillsContainer, SkillsIcons, SkillsInfo } from "../styles/skills";
+import {
+  SkillContext,
+  SkillsContainer,
+  SkillsIcons,
+  SkillsInfo,
+} from "../styles/skills";
 import { NormalText, Title } from "../styles/style";
 import { skillsList } from "../content/skillsList";
 
@@ -8,7 +13,6 @@ export function Skills() {
   return (
     <>
       <SkillsContainer>
-        
         <SkillsInfo>
           <Title square-axis="hor">Habilidades</Title>
           <div className="skills-description">
@@ -29,17 +33,19 @@ export function Skills() {
               utilizo no dia dia ou estou estudando atualmente
             </p>
             <div className="skills-box">
-              {allSkills.map((skill, index) => {
+              {allSkills.map((skill) => {
                 return (
-                  <div key={index} className="skill-icon">
-                    <img src={skill.img} alt="skill-icon" />
-                  </div>
+                  <SkillContext key={skill.tech}>
+                    <div className="skill-icon">
+                      <img src={skill.img} alt="skill-icon" />
+                    </div>
+                    <p>{skill.tech}</p>
+                  </SkillContext>
                 );
               })}
             </div>
           </div>
         </SkillsIcons>
-
       </SkillsContainer>
     </>
   );
