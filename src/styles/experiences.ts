@@ -31,8 +31,9 @@ export const Experience = styled.div`
   margin: 4em 0;
 
   &:nth-child(even) {
-    background-color: ${({ theme }) => theme.secundaryBg};
-    box-shadow: 8px 8px 3px 0 rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.07);
+    box-shadow: 8px 8px 3px 0 rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5px);
   }
 
   .experience-info {
@@ -40,15 +41,16 @@ export const Experience = styled.div`
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: start;
-      gap: 30px;
+      justify-content: center;
+      gap: 40px;
     }
 
     h3::after {
       content: "";
       position: relative;
       display: block;
-      width: 50%;
+      width: 85%;
+      margin-right: 40px;
       height: 2px;
       background-color: ${({ theme }) => theme.btnBg};
       box-shadow: 0 0 15px 3px rgba(60, 105, 255, 0.26);
