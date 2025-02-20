@@ -15,14 +15,15 @@ export function Projects() {
             return (
               <Project key={project.name}>
                 <div className="project-image">
-                  <div className="project-name">
-                    <p>{project.name}</p>
+                  <div className="img-box">
+                    <img src={project.sourceImg} alt="" />
                   </div>
-
-                  <img src={project.sourceImg} alt="" />
                 </div>
 
                 <div className="project-info">
+                  <div className="project-name">
+                    <h2>{project.name}</h2>
+                  </div>
                   <p>{project.descrição}</p>
                   <a href={project.link}>Ver projeto</a>
                 </div>

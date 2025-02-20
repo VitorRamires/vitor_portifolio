@@ -3,37 +3,43 @@ import placeholder from "../assets/placeholder.png";
 export const projectList = [
   {
     name: "Projeto 1",
-    descrição: "Descrição do projeto de número 01",
+    descrição:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
     sourceImg: placeholder,
     link: "#",
   },
   {
     name: "Projeto 2",
-    descrição: "Descrição do projeto de número 02",
+    descrição:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
     sourceImg: placeholder,
     link: "#",
   },
   {
     name: "Projeto 3",
-    descrição: "Descrição do projeto de número 03",
+    descrição:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
     sourceImg: placeholder,
     link: "#",
   },
   {
     name: "Projeto 4",
-    descrição: "Descrição do projeto de número 04",
+    descrição:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
     sourceImg: placeholder,
     link: "#",
   },
   {
     name: "Projeto 5",
-    descrição: "Descrição do projeto de número 05",
+    descrição:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
     sourceImg: placeholder,
     link: "#",
   },
   {
     name: "Projeto 6",
-    descrição: "Descrição do projeto de número 06",
+    descrição:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
     sourceImg: placeholder,
     link: "#",
   },

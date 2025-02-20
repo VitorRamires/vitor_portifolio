@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     --primary-bg: #1b1b1b;
     --secundary-bg: #2f2f2f;
     --btn-bg: #2d5eff;
-
     --primary-color: #ffffff;
     --secundary-color: #dcdcdc;
     --terciary-color: #3496ff;
@@ -56,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Centralize = styled.div`
-  width: 1450px;
+  width: 1650px;
   max-width: 95%;
   margin: 0 auto;
 `;
@@ -66,11 +65,9 @@ export const Btn = styled.button`
   width: 250px;
   max-width: 100%;
   padding: 15px 25px;
-
   background-color: ${({ theme }) => theme.btnBg};
   border-radius: 3px;
   border: none;
-
   color: ${({ theme }) => theme.primaryColor};
   font-size: 1.4rem;
   text-decoration: none;
@@ -93,12 +90,10 @@ export const Title = styled.h2`
   position: relative;
   width: max-content;
   margin: 0 auto 55px auto;
-
   font-size: 2.5rem;
   color: ${({ theme }) => theme.primaryColor};
   font-family: "LexendExa";
   font-weight: 400;
-
   display: flex;
   flex-direction: column-reverse;
   align-items: center;

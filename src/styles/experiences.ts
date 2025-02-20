@@ -11,14 +11,12 @@ export const ExperiencesContainer = styled.div`
     font-family: "LexendExa";
     color: ${({ theme }) => theme.primaryColor};
     font-size: 1.5rem;
-
     margin-bottom: 5px;
   }
 
   p {
     font-family: "Montserrat";
     margin: 15px 0;
-
     font-size: 0.9rem;
     color: ${({ theme }) => theme.secundaryColor};
     line-height: 1.5;
@@ -29,7 +27,6 @@ export const Experience = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 70px 50px;
-
   border-radius: 7px;
   margin: 4em 0;
 
@@ -54,7 +51,6 @@ export const Experience = styled.div`
       width: 50%;
       height: 2px;
       background-color: ${({ theme }) => theme.btnBg};
-
       box-shadow: 0 0 15px 3px rgba(60, 105, 255, 0.26);
 
       @media screen and (max-width: 900px) {
@@ -70,7 +66,6 @@ export const Experience = styled.div`
         width: 50%;
         height: 2px;
         background-color: ${({ theme }) => theme.btnBg};
-
         box-shadow: 0 0 15px 3px rgba(60, 105, 255, 0.26);
       }
     }

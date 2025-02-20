@@ -12,10 +12,6 @@ export function Skills() {
 
         <SkillsIcons>
           <div className="skills-wrapper">
-            <p className="observation">
-              Dentre as tecologias listadas, existem ferramentas que ou ja
-              utilizo no dia dia ou estou estudando atualmente
-            </p>
             <div className="skills-box">
               {allSkills.map((skill) => {
                 return (

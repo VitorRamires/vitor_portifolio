@@ -25,16 +25,10 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsIcons = styled.div`
-  .observation {
-    color: rgb(49, 49, 49);
-    font-family: "LexendExa";
-    font-size: 0.7rem;
-  }
 
   .skills-box {
     position: relative;
     margin-top: 20px;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     place-items: center;
@@ -62,14 +56,11 @@ export const SkillsIcons = styled.div`
     .skill-icon {
       display: flex;
       margin: 25px auto 15px auto;
-
       width: 100px;
       height: 100px;
       padding: 15px;
-
       background-color: #414141;
       box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.25);
-
       border: 2px solid #595959;
       border-radius: 5px;
       cursor: pointer;
@@ -96,7 +87,6 @@ export const SkillContext = styled.div`
   text-align: center;
   padding: 35px;
   border-radius: 10px;
-
   backdrop-filter: blur(50px);
   box-shadow: 15px 15px 3px 0 rgba(0, 0, 0, 0.25);
 

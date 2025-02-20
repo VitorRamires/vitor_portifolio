@@ -92,8 +92,7 @@ export const CircleDecoration = styled.div`
   position: relative;
   width: 400px;
   height: 400px;
-  place-self: start end;
-
+  place-self: start center;
   border-radius: 50%;
   background: -webkit-gradient(120deg, #3c69ff, #243f99);
   background: -moz-linear-gradient(120deg, #3c69ff, #243f99);
