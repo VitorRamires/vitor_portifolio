@@ -5,24 +5,17 @@ export const HeaderContainer = styled.div`
   top: 0%;
   width: 100%;
   z-index: 99;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  padding: 25px 50px;
-
-  background-color: ${({ theme }) => theme.primaryBg};
-
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px 50px;
   font-family: "LexendExa";
 
   a {
     color: ${({ theme }) => theme.secundaryColor};
     text-decoration: none;
-    font-size: 1.3rem;
-
+    font-size: 1rem;
     @media screen and (max-width: 820px) {
       display: none;
     }

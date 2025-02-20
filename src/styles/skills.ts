@@ -1,11 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 0.7fr;
-  gap: 5px;
-
-  margin-top: 15rem;
+  margin-top: 5rem;
 
   @media screen and (max-width: 1270px) {
     grid-template-columns: 1fr;
@@ -28,32 +24,6 @@ export const SkillsContainer = styled.div`
   }
 `;
 
-export const SkillsInfo = styled.div`
-  font-family: "Montserrat";
-
-  h2 {
-    margin: 0 0 75px 0%;
-
-    @media screen and (max-width: 1270px) {
-      margin: 0 auto 75px auto;
-    }
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    margin-bottom: 40px;
-    color: ${({ theme }) => theme.terciaryColor};
-  }
-
-  p {
-    max-width: 60ch;
-    font-size: 1rem;
-    font-weight: 400;
-    color: ${({ theme }) => theme.secundaryColor};
-    line-height: 1.5;
-  }
-`;
-
 export const SkillsIcons = styled.div`
   .observation {
     color: rgb(49, 49, 49);
@@ -63,24 +33,35 @@ export const SkillsIcons = styled.div`
 
   .skills-box {
     position: relative;
-    padding: 55px;
     margin-top: 20px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-    place-items: start center;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 70px 150px;
 
-    background-color: ${({ theme }) => theme.secundaryBg};
-
-    border-image: linear-gradient(to right, #3c69ff 0%, #243f99 100%) 1;
-    border-width: 5px;
-    border-style: solid;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60%;
+      height: 60%;
+      background-image: linear-gradient(
+        125deg,
+        rgb(61, 99, 204),
+        rgb(0, 68, 255)
+      );
+      box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.25);
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-size: 200% auto;
+      border-radius: 15px;
+    }
 
     .skill-icon {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      margin: 25px auto 15px auto;
 
       width: 100px;
       height: 100px;
@@ -90,28 +71,41 @@ export const SkillsIcons = styled.div`
       box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.25);
 
       border: 2px solid #595959;
+      border-radius: 5px;
       cursor: pointer;
       transition: 0.2s;
 
       &:hover {
-        background-color: #ffffff;
+        transform: scale(1.1);
+        box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.25);
       }
     }
 
     img {
-      width: 90%;
+      width: 100%;
       height: auto;
     }
   }
 `;
 
 export const SkillContext = styled.div`
+  width: 100%;
   color: ${({ theme }) => theme.primaryColor};
+  background-color: rgba(41, 41, 41, 0.56);
   font-family: "LexendExa";
   text-align: center;
+  padding: 35px;
+  border-radius: 10px;
 
-  p {
-    margin-top: 15px;
+  backdrop-filter: blur(50px);
+  box-shadow: 15px 15px 3px 0 rgba(0, 0, 0, 0.25);
+
+  .tech-description {
+    color: rgb(173, 173, 173);
+    line-height: 1.5;
+    text-align: start;
+    margin-top: 25px;
     font-size: 0.7rem;
   }
+
 `;

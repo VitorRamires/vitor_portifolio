@@ -1,30 +1,11 @@
 import styled from "styled-components";
 
-// Interfaces
-interface BannerDecorationProps {
-  position?: string;
-}
-
-export const BannerDecoration = styled.div<BannerDecorationProps>`
-  position: relative;
-  width: 200px;
-  max-width: 100%;
-  padding: 10px 0;
-  background-color: #272727;
-  left: ${(props) => (props.position == "top" ? "0" : "100%")};
-  display: block;
-
-  @media screen and (max-width: 1026px) {
-    display: none;
-  }
-`;
-
 export const BannerContainer = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin: 8rem auto 20rem auto;
+  margin: 5rem auto 5rem auto;
 
   @media screen and (max-width: 1026px) {
     grid-template-columns: 1fr;
@@ -48,26 +29,38 @@ export const BannerText = styled.div`
 
   h2 {
     font-weight: 400;
-
     @media screen and (max-width: 350px) {
       font-size: 1.4rem;
     }
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.4;
     font-family: "Montserrat";
     color: ${({ theme }) => theme.secundaryColor};
     margin: 35px 0 85px 0;
     font-weight: 300;
+    width: 50ch;
   }
 
   .text-banner-wrapper {
     position: relative;
     margin: 125px 0;
-    max-width: 40ch;
     left: 10%;
+
+    h2 {
+      max-width: 15ch;
+      font-size: 4rem;
+
+      & span {
+        background-image: linear-gradient(to right, #3496ff, #2d5eff);
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
 
     @media screen and (max-width: 1026px) {
       left: 0;
@@ -79,33 +72,6 @@ export const BannerText = styled.div`
       p {
         font-size: 0.8rem;
       }
-    }
-  }
-
-  .box-decoration-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 7rem;
-    display: none;
-    padding: 0 25px;
-
-    @media screen and (max-width: 1026px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      place-items: center;
-      gap: 300px;
-      gap: 10px;
-
-      div {
-        max-width: 100%;
-        display: block !important;
-        left: unset;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      display: none;
     }
   }
 

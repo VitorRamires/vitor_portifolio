@@ -5,7 +5,7 @@ export const Navigation = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 5rem;
+    gap: 2rem;
     font-size: 1.7rem;
     font-weight: 200;
 

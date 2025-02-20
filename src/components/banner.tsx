@@ -1,6 +1,5 @@
 import {
   BannerContainer,
-  BannerDecoration,
   BannerText,
   CircleDecoration,
 } from "../styles/banner";
@@ -11,20 +10,16 @@ export function Banner() {
     <>
       <BannerContainer>
         <BannerText>
-          <BannerDecoration position={"top"} />
           <div className="text-banner-wrapper">
-            <h2>Desenvolvedor front-end</h2>
+            <h2>
+              Meu nome é <span>Vitor Ramires</span>
+            </h2>
             <p>
               Atualmente focando em aperfeiçoar minhas habilidades no
               desenvolvimento front-end atuando nas tecnologias mais usadas do
               mercado
             </p>
-            <Btn>Linkedin</Btn>
-          </div>
-          <BannerDecoration position={"bottom"} />
-          <div className="box-decoration-mobile">
-            <BannerDecoration />
-            <BannerDecoration />
+            <Btn>Baixar Currículo</Btn>
           </div>
         </BannerText>
 

@@ -5,12 +5,9 @@ export function Header() {
   return (
     <>
       <HeaderContainer>
-        <LogoName>Vitor</LogoName>
+        <LogoName>V</LogoName>
         <Navigation>
           <ul>
-            <li>
-              <a href="">Sobre</a>
-            </li>
             <li>
               <a href="">Skills</a>
             </li>

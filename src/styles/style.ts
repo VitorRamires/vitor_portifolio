@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
 
+
   :root {
     --primary-bg: #1b1b1b;
     --secundary-bg: #2f2f2f;
@@ -29,7 +30,23 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
+    min-height: 100vh;
     background-color: var(--primary-bg);
+    background-image: repeating-linear-gradient(to right, transparent 0 49px,rgb(34, 34, 34) 49px 50px ), repeating-linear-gradient(to bottom, transparent 0 49px,rgb(34, 34, 34) 49px 50px);
+    background-attachment: fixed;
+    &::before{
+      background: linear-gradient(to right, #3496ff, #2d5eff);
+      z-index: -1;
+      position: fixed;
+      top:-100px;
+      left:calc(50% - 200px);
+      border-radius: 50% 50% 0 0;
+      pointer-events: none;
+      filter: blur(250px);
+      content: '';
+      width: 200px;
+      height: 200px;
+    }
   }
 
   img{
@@ -64,10 +81,10 @@ export const Btn = styled.button`
 
 export const NormalText = styled.p`
   color: ${({ theme }) => theme.secundaryColorColor};
-  font-weight: 300;
+  font-weight: 200;
   font-size: 0.9rem;
 
-  @media screen and (max-width:350px){
+  @media screen and (max-width: 350px) {
     font-size: 0.75rem;
   }
 `;

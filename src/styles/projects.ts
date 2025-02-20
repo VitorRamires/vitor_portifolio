@@ -8,8 +8,7 @@ interface ProjectProps {
 export const ProjectContainer = styled.div`
   position: relative;
   width: 100%;
-
-  margin-top: 20rem;
+  margin-top: 15rem;
 `;
 
 export const ProjectWrapper = styled.div`
@@ -33,40 +32,13 @@ export const Project = styled.div<ProjectProps>`
     position: relative;
     width: 100%;
     height: 290px;
-
-    &:hover .project-name {
-      opacity: 1;
-    }
-  }
-
-  .project-name {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    margin: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "LexendExa";
-    font-size: 1.3rem;
-    font-weight: 700;
-
-    opacity: 0;
-    transition: 0.2s;
   }
 
   img {
-    border-image: linear-gradient(to right, #3c69ff 0%, #243f99 100%) 1;
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, #2d5eff, #3496ff);
+    padding: 15px 15px 15px;
     box-shadow: 0 0 30px 10px rgba(60, 105, 255, 0.26);
-    border-width: 5px;
-    border-style: solid;
-
-    object-fit: cover;
   }
 
   .project-info {
