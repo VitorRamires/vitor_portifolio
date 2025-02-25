@@ -17,7 +17,7 @@ export const SkillsContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 1026px) {
+  @media screen and (max-width: 1176px) {
     .skills-description {
       display: none;
     }
@@ -25,7 +25,6 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsIcons = styled.div`
-
   .skills-box {
     position: relative;
     margin-top: 20px;
@@ -76,6 +75,10 @@ export const SkillsIcons = styled.div`
       width: 100%;
       height: auto;
     }
+
+    @media screen and (max-width: 400px) {
+      display: block;
+    }
   }
 `;
 
@@ -98,4 +101,8 @@ export const SkillContext = styled.div`
     font-size: 0.7rem;
   }
 
+  
+  @media screen and (max-width: 400px) {
+      margin-top:35px;
+    }
 `;

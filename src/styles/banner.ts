@@ -7,7 +7,7 @@ export const BannerContainer = styled.div`
   gap: 15px;
   margin: 5rem auto 5rem auto;
 
-  @media screen and (max-width: 1026px) {
+  @media screen and (max-width: 1175px) {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
@@ -42,6 +42,11 @@ export const BannerText = styled.div`
     margin: 35px 0 85px 0;
     font-weight: 300;
     width: 50ch;
+
+    @media screen and (max-width: 1175px) {
+      margin: 35px auto 85px auto;
+      width: 100%;
+    }
   }
 
   .text-banner-wrapper {
@@ -60,12 +65,14 @@ export const BannerText = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-    }
 
-    @media screen and (max-width: 1026px) {
-      left: 0;
-      text-align: center;
-      margin: 35px auto;
+      @media screen and (max-width: 1175px) {
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width:600px){
+        font-size: 2.5rem;
+      }
     }
 
     @media screen and (max-width: 350px) {
@@ -73,9 +80,17 @@ export const BannerText = styled.div`
         font-size: 0.8rem;
       }
     }
+
+    @media screen and (max-width: 1175px) {
+      left: 0;
+      text-align: center;
+      margin: 35px auto;
+    }
+
+
   }
 
-  @media screen and (max-width: 1026px) {
+  @media screen and (max-width: 1175px) {
     width: 100%;
   }
 
@@ -111,7 +126,7 @@ export const CircleDecoration = styled.div`
     box-shadow: inset -5px 4px 30px #3c69ff;
   }
 
-  @media screen and (max-width: 1026px) {
+  @media screen and (max-width: 1175px) {
     place-self: center;
     order: -1;
   }

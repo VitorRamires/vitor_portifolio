@@ -27,12 +27,16 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat';
     src: url("/fonts/Montserrat.ttf");
   }
-  
+
+
   body {
     min-height: 100vh;
     background-color: var(--primary-bg);
     background-image: repeating-linear-gradient(to right, transparent 0 49px,rgb(34, 34, 34) 49px 50px ), repeating-linear-gradient(to bottom, transparent 0 49px,rgb(34, 34, 34) 49px 50px);
     background-attachment: fixed;
+    background-size: 100px 100px, 100px 100px, 200% 200%;
+    animation: moveBackground 10s linear infinite;
+
     &::before{
       background: linear-gradient(to right, #3496ff, #2d5eff);
       z-index: -1;
@@ -88,7 +92,8 @@ export const NormalText = styled.p`
 
 export const Title = styled.h2`
   position: relative;
-  width: max-content;
+  width: 100%;
+  text-align: center;
   margin: 0 auto 55px auto;
   font-size: 2.5rem;
   color: ${({ theme }) => theme.primaryColor};

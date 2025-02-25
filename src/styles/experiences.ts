@@ -31,7 +31,7 @@ export const Experience = styled.div`
   margin: 4em 0;
 
   &:nth-child(even) {
-    background-color:rgba(0, 0, 0, 0.07);
+    background-color: rgba(0, 0, 0, 0.07);
     box-shadow: 8px 8px 3px 0 rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(5px);
   }
@@ -43,6 +43,10 @@ export const Experience = styled.div`
       align-items: center;
       justify-content: center;
       gap: 40px;
+
+      @media screen and (max-width: 900px) {
+        justify-content: start;
+      }
     }
 
     h3::after {
@@ -73,12 +77,8 @@ export const Experience = styled.div`
     }
   }
 
-
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-
-
 `;
-

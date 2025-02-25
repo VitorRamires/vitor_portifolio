@@ -30,6 +30,7 @@ export const Project = styled.div<ProjectProps>`
   margin: 70px 0;
   font-family: "LexendExa";
   gap: 40px;
+
   .project-image {
     position: relative;
     width: 650px;
@@ -64,6 +65,12 @@ export const Project = styled.div<ProjectProps>`
       box-shadow: -10px 0 10px -5px rgba(60, 105, 255, 0.26);
     }
     margin-left: 15%;
+
+    @media screen and (max-width: 1175px) {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
   }
 
   img {
@@ -73,7 +80,13 @@ export const Project = styled.div<ProjectProps>`
 
   .project-info {
     font-size: 0.8rem;
-    padding-top:35px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: start;
+    gap: 25px;
+
     p {
       max-width: 70ch;
       font-weight: 200;
@@ -87,6 +100,11 @@ export const Project = styled.div<ProjectProps>`
       font-weight: 300;
       cursor: pointer;
     }
+  }
+
+  @media screen and (max-width: 1175px) {
+    flex-direction: column;
+    align-items: center;
   }
 
   @media screen and (max-width: 510px) {
