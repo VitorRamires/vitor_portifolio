@@ -5,7 +5,6 @@ import { Centralize, GlobalStyle } from "./styles/style";
 import { Banner } from "./components/banner";
 import { Projects } from "./components/projects";
 import { Skills } from "./components/skills";
-import { Experiences } from "./components/experiences";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
           <Banner />
           <Skills />
           <Projects />
-          <Experiences />
         </Centralize>
       </ThemeProvider>
     </>

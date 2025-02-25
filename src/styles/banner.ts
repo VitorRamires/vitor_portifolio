@@ -57,6 +57,7 @@ export const BannerText = styled.div`
     h2 {
       max-width: 15ch;
       font-size: 4rem;
+  
 
       & span {
         background-image: linear-gradient(to right, #3496ff, #2d5eff);
@@ -70,7 +71,7 @@ export const BannerText = styled.div`
         margin: 0 auto;
       }
 
-      @media screen and (max-width:600px){
+      @media screen and (max-width: 600px) {
         font-size: 2.5rem;
       }
     }
@@ -86,8 +87,6 @@ export const BannerText = styled.div`
       text-align: center;
       margin: 35px auto;
     }
-
-
   }
 
   @media screen and (max-width: 1175px) {

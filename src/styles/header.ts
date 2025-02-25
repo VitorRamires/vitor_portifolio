@@ -9,8 +9,9 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 5px 50px;
   font-family: "LexendExa";
+  backdrop-filter: blur(30px);
 
   a {
     color: ${({ theme }) => theme.secundaryColor};

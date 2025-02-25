@@ -14,9 +14,6 @@ export function Header() {
             <li>
               <a href="">Projetos</a>
             </li>
-            <li>
-              <a href="">Experiências</a>
-            </li>
           </ul>
         </Navigation>
       </HeaderContainer>

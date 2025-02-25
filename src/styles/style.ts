@@ -21,11 +21,13 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'LexendExa';
     src: url("/fonts/LexendExa.ttf");
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Montserrat';
     src: url("/fonts/Montserrat.ttf");
+    font-display: swap;
   }
 
 
