@@ -12,7 +12,7 @@ export function Banner() {
         <BannerText>
           <div className="text-banner-wrapper">
             <h2>
-              Meu nome é <span>Vitor Ramires</span>
+              <span>Vitor Ramires</span>
             </h2>
             <p>
               Atualmente focando em aperfeiçoar minhas habilidades no

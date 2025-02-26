@@ -36,9 +36,11 @@ export const SkillsIcons = styled.div`
       width: 60%;
       height: 60%;
       background-image: linear-gradient(
-        125deg,
-        rgb(61, 99, 204),
-        rgb(0, 68, 255)
+        5deg,
+        rgb(103, 132, 214),
+        rgb(0, 68, 255),
+        rgb(39, 83, 167)
+        
       );
       box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.25);
       z-index: -1;

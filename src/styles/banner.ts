@@ -51,8 +51,13 @@ export const BannerText = styled.div`
       max-width: 15ch;
       font-size: 4rem;
       & span {
-        background-image: linear-gradient(to right, #3496ff, #2d5eff);
-        background-size: 200% auto;
+        background-image: linear-gradient(
+          to right,
+          #3496ff,
+          #2d5eff,
+          rgb(255, 255, 255)
+        );
+        background-size: 100% auto;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

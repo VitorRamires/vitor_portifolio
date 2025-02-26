@@ -47,7 +47,6 @@ export const Project = styled.div<ProjectProps>`
       #3496ff
     );
     padding: 15px 20px 15px 30px;
-    box-shadow: 10px 0 10px -5px rgba(60, 105, 255, 0.26);
   }
 
   &:nth-child(even) {
@@ -60,7 +59,6 @@ export const Project = styled.div<ProjectProps>`
         transparent,
         transparent
       );
-      box-shadow: -10px 0 10px -5px rgba(60, 105, 255, 0.26);
     }
     @media screen and (max-width: 1175px) {
       flex-direction: column;
@@ -74,7 +72,6 @@ export const Project = styled.div<ProjectProps>`
     box-shadow: 0 -10px 30px 5px rgba(0, 0, 0, 0.23);
     object-fit: cover;
     width: 590px;
-    min-width: 600px;
     max-width: 100%;
     height: auto;
   }
