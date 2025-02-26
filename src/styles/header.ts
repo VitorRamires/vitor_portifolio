@@ -12,7 +12,6 @@ export const HeaderContainer = styled.div`
   padding: 5px 50px;
   font-family: "LexendExa";
   backdrop-filter: blur(30px);
-
   a {
     color: ${({ theme }) => theme.secundaryColor};
     text-decoration: none;

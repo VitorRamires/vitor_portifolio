@@ -1,19 +1,46 @@
 const iconsPath = "/icons/";
 
 const skills = [
-  { tech: "Javascript", img: "javascript.svg" },
-  { tech: "CSS3", img: "css.svg" },
-  { tech: "HTML5", img: "html.svg" },
-  { tech: "React", img: "react.svg" },
-  { tech: "Git", img: "git.svg" },
-  { tech: "Figma", img: "figma.svg" },
+  {
+    tech: "Javascript",
+    img: "javascript.svg",
+    description:
+      "Linguagem de programação usada para criar interatividade em páginas web. Suporta programação orientada a objetos, funcional e assíncrona.",
+  },
+  {
+    tech: "CSS3",
+    img: "css.svg",
+    description:
+      "folha de estilo responsável pelo design e estilo das páginas web, incluindo animações, flexbox e grid layout.",
+  },
+  {
+    tech: "HTML5",
+    img: "html.svg",
+    description:
+      "Linguagem de marcação para estruturação de páginas web, trazendo novos elementos semânticos, suporte a multimídia e APIs avançadas.",
+  },
+  {
+    tech: "React",
+    img: "react.svg",
+    description:
+      "Biblioteca JavaScript para construção de interfaces de usuário reativas e componentes reutilizáveis, utilizando um conceito chamado Virtual DOM.",
+  },
+  {
+    tech: "Git",
+    img: "git.svg",
+    description:
+      "Sistema de controle de versão distribuído que permite rastrear mudanças no código, trabalhar em equipe e gerenciar repositórios.",
+  },
+  {
+    tech: "Figma",
+    img: "figma.svg",
+    description:
+      "Ferramenta online para design de interfaces e prototipagem, permitindo colaboração em tempo real e integração com equipes de desenvolvimento.",
+  },
 ];
-
-const description =
-  " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?";
 
 export const skillsList = skills.map((skill) => ({
   tech: skill.tech,
   img: `${iconsPath}${skill.img}`,
-  description
+  description: skill.description,
 }));

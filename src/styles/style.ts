@@ -8,7 +8,6 @@ export const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
 
-
   :root {
     --primary-bg: #1b1b1b;
     --secundary-bg: #2f2f2f;
@@ -37,8 +36,7 @@ export const GlobalStyle = createGlobalStyle`
     background-image: repeating-linear-gradient(to right, transparent 0 49px,rgb(34, 34, 34) 49px 50px ), repeating-linear-gradient(to bottom, transparent 0 49px,rgb(34, 34, 34) 49px 50px);
     background-attachment: fixed;
     background-size: 100px 100px, 100px 100px, 200% 200%;
-    animation: moveBackground 10s linear infinite;
-
+    animation: moveBG 10s linear infinite;
     &::before{
       background: linear-gradient(to right, #3496ff, #2d5eff);
       z-index: -1;
@@ -53,11 +51,21 @@ export const GlobalStyle = createGlobalStyle`
       height: 200px;
     }
   }
-
   img{
     width: 100%;
     height: 100%;
   }
+
+  @keyframes moveBG {
+    0% {
+      background-position: 0 0, 0 0;
+    }
+    100% {
+      background-position: 0 -500px, 0 -500px;
+    }
+  }
+  
+
 `;
 
 export const Centralize = styled.div`
@@ -78,7 +86,6 @@ export const Btn = styled.button`
   font-size: 1.4rem;
   text-decoration: none;
   text-align: center;
-
   cursor: pointer;
 `;
 
@@ -86,7 +93,6 @@ export const NormalText = styled.p`
   color: ${({ theme }) => theme.secundaryColorColor};
   font-weight: 200;
   font-size: 0.9rem;
-
   @media screen and (max-width: 350px) {
     font-size: 0.75rem;
   }
@@ -106,7 +112,6 @@ export const Title = styled.h2`
   align-items: center;
   justify-content: center;
   gap: 20px;
-
   &::after {
     content: "";
     position: relative;
@@ -114,7 +119,6 @@ export const Title = styled.h2`
     height: 25px;
     border: 3px solid ${({ theme }) => theme.terciaryColor};
   }
-
   @media screen and (max-width: 380px) {
     font-size: 2rem;
   }

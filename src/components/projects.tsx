@@ -1,5 +1,11 @@
 import { projectList } from "../content/projectList";
-import { Project, ProjectContainer, ProjectWrapper } from "../styles/projects";
+import {
+  Project,
+  ProjectContainer,
+  ProjectWrapper,
+  TagBox,
+  Tags,
+} from "../styles/projects";
 import { Title } from "../styles/style";
 
 export function Projects() {
@@ -26,6 +32,11 @@ export function Projects() {
                   </div>
                   <p>{project.descrição}</p>
                   <a href={project.link}>Ver projeto</a>
+                  <TagBox>
+                    {project.tags.map((tag) => {
+                      return <Tags>{tag}</Tags>;
+                    })}
+                  </TagBox>
                 </div>
               </Project>
             );

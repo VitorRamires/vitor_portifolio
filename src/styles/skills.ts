@@ -5,12 +5,10 @@ export const SkillsContainer = styled.div`
 
   @media screen and (max-width: 1270px) {
     grid-template-columns: 1fr;
-
     .skills-description {
       margin-bottom: 55px;
       display: block;
       text-align: center;
-
       p {
         max-width: 100%;
       }
@@ -32,7 +30,6 @@ export const SkillsIcons = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     place-items: center;
     gap: 70px 150px;
-
     &::before {
       position: absolute;
       content: "";
@@ -51,7 +48,6 @@ export const SkillsIcons = styled.div`
       background-size: 200% auto;
       border-radius: 15px;
     }
-
     .skill-icon {
       display: flex;
       margin: 25px auto 15px auto;
@@ -64,18 +60,15 @@ export const SkillsIcons = styled.div`
       border-radius: 5px;
       cursor: pointer;
       transition: 0.2s;
-
       &:hover {
         transform: scale(1.1);
         box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.25);
       }
     }
-
     img {
       width: 100%;
       height: auto;
     }
-
     @media screen and (max-width: 400px) {
       display: block;
     }
@@ -92,7 +85,6 @@ export const SkillContext = styled.div`
   border-radius: 10px;
   backdrop-filter: blur(50px);
   box-shadow: 15px 15px 3px 0 rgba(0, 0, 0, 0.25);
-
   .tech-description {
     color: rgb(173, 173, 173);
     line-height: 1.5;
@@ -100,8 +92,6 @@ export const SkillContext = styled.div`
     margin-top: 25px;
     font-size: 0.7rem;
   }
-
-  
   @media screen and (max-width: 400px) {
       margin-top:35px;
     }

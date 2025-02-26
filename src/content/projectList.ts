@@ -1,46 +1,62 @@
-import placeholder from "../assets/placeholder.png";
+import projeto01 from "../assets/Projeto_01.png";
+import projeto02 from "../assets/Projeto_02.png";
+import projeto03 from "../assets/Projeto_03.png";
+import projeto04 from "../assets/Projeto_04.png";
+import projeto05 from "../assets/Projeto_05.png";
 
 export const projectList = [
   {
-    name: "Projeto 1",
+    name: "Portifólio",
     descrição:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
-    sourceImg: placeholder,
+      "Desenvolvimento de um portiólio para um gestor de projetos experiente, com uma trajetória consolidada na gestão de grandes contratos e projetos estratégicos.",
+    sourceImg: projeto01,
     link: "#",
+    tags: ["CSS", "HTML", "Javascript"],
   },
   {
-    name: "Projeto 2",
+    name: "Gerenciador de livros",
     descrição:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
-    sourceImg: placeholder,
+      "Este projeto é um gerenciador de livros e autores, onde ambos estão relacionados entre si. Possui funcionalidades de criação, edição, visualização, remoção e ordenação tanto de livros quanto de autores.",
+    sourceImg: projeto02,
     link: "#",
+    tags: [
+      "JSDoc",
+      "Styled-components",
+      "CSS",
+      "React.js",
+      "RadixUI",
+      "React-hook-form",
+      "React-router-dom",
+    ],
   },
   {
-    name: "Projeto 3",
+    name: "Timer pomodoro",
     descrição:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
-    sourceImg: placeholder,
+      "Timer ao estilo pomodoro, que grava os projetos/tarefas que estão em andamento, que foram interrompidos ou concluídos",
+    sourceImg: projeto03,
     link: "#",
+    tags: [
+      "Styled-components",
+      "CSS",
+      "React.js",
+      "Typescript",
+      "React-router-dom",
+    ],
   },
   {
-    name: "Projeto 4",
+    name: "BikeStyle",
     descrição:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
-    sourceImg: placeholder,
+      "Projeto realizado através do curso Origamid, para melhorar e praticar conhecimentos de HTML, CSS e Javascript. ESTE PROJETO SERA MODIFICADO E APRIMORADO MAIS ADIANTE",
+    sourceImg: projeto04,
     link: "#",
+    tags: ["HTML", "CSS", "Javascript"],
   },
   {
-    name: "Projeto 5",
+    name: "Buscador de receitas",
     descrição:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
-    sourceImg: placeholder,
+      "Buscador de receitas baseados nos ingredientes escolhidos. Desenvolvido com Vue3 e Typescript",
+    sourceImg: projeto05,
     link: "#",
-  },
-  {
-    name: "Projeto 6",
-    descrição:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci atque perferendis quisquam deleniti, autem officia voluptas blanditiis consequatur voluptatem in placeat assumenda voluptatum sequi culpa. Minima accusamus facilis id?",
-    sourceImg: placeholder,
-    link: "#",
+    tags: ["Vue3", "CSS", "Typescript", "API"],
   },
 ];
