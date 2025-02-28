@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const SkillsContainer = styled.div`
+export const SkillsContainer = styled(motion.div)`
   margin-top: 5rem;
 
   @media screen and (max-width: 1270px) {
