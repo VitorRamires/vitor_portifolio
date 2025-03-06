@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
   position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    border-bottom: none;
+  }
 `;
 
 export const BannerText = styled.div`
@@ -27,7 +32,7 @@ export const BannerText = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
+      cursor: none;
 
       h2 {
         position: relative;
@@ -79,7 +84,7 @@ export const BannerText = styled.div`
 
     .main {
       position: relative;
-      top: 60px;
+      top: 30px;
 
       @media screen and (max-width: 1024px) {
         .mobile-animation {
@@ -119,7 +124,7 @@ export const BannerText = styled.div`
       mask-image: url(../../public/icons/mask-circle.svg);
       -webkit-mask-image: url(url(../../public/icons/mask-circle.svg));
       mask-repeat: no-repeat;
-      mask-size: 1700px;
+      mask-size: 2300px;
 
       p {
         font-size: 1.5rem;

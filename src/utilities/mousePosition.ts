@@ -5,14 +5,24 @@ export default function useMousePosition() {
     x: number;
   }
 
+  const [referenfeElement, setReferenceElement] = useState<HTMLElement | null>(
+    null
+  );
   const [mousePosition, setMousePosition] = useState<MousePosition>({ x: 0 });
 
   function uptadePosition(event: MouseEvent): void {
     setMousePosition({ x: event.clientX });
   }
-  useEffect(() => {
-    window.addEventListener("mousemove", uptadePosition);
-  });
 
-  return mousePosition;
+  useEffect(() => {
+    if (referenfeElement) {
+      referenfeElement.addEventListener("mousemove", uptadePosition);
+
+      return () => {
+        referenfeElement.removeEventListener("mousemove", uptadePosition);
+      };
+    }
+  }, [referenfeElement]);
+
+  return { mousePosition, setReferenceElement };
 }
