@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Banner() {
   const { x } = useMousePosition();
-  const sizeMask = 1250;
+  const sizeMask = 1700;
 
   return (
     <>
@@ -14,7 +14,7 @@ export function Banner() {
           <div className="text-banner-wrapper">
             <div className="main">
               <h2>
-                <span className="name-color">Vitor Ramires</span>
+                <span className="name-color"><span className="mobile-animation">Vitor Ramires</span></span>
                 <p>Developer</p>
                 <p>UX / UI</p>
               </h2>
@@ -23,7 +23,7 @@ export function Banner() {
             <motion.div
               className="mask"
               animate={{
-                WebkitMaskPosition: `${x - sizeMask }px`,
+                WebkitMaskPosition: `${x -  sizeMask / 1.3}px`,
                 transition: { type: "tween", ease: "backOut" },
               }}
             >
