@@ -43,7 +43,7 @@ export const Project = styled.div<ProjectProps>`
       90deg,
       transparent,
       transparent,
-      #2d5eff,
+      rgb(0, 247, 255),
       #3496ff
     );
     padding: 15px 20px 15px 30px;
@@ -54,7 +54,7 @@ export const Project = styled.div<ProjectProps>`
     .img-box {
       background-image: linear-gradient(
         90deg,
-        #2d5eff,
+        rgb(0, 247, 255),
         #3496ff,
         transparent,
         transparent

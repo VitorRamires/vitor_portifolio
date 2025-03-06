@@ -1,31 +1,39 @@
-import {
-  BannerContainer,
-  BannerText,
-  CircleDecoration,
-} from "../styles/banner";
-import { Btn } from "../styles/style";
+import { BannerContainer, BannerText } from "../styles/banner";
+import useMousePosition from "../utilities/mousePosition";
+import hiHand from '/icons/hi-hand.svg'
+import { motion } from "framer-motion";
 
 export function Banner() {
+  const { x } = useMousePosition();
+  const sizeMask = 1250;
+
   return (
     <>
       <BannerContainer>
         <BannerText>
           <div className="text-banner-wrapper">
-            <h2>
-              <span>Vitor Ramires</span>
-            </h2>
-            <p>
-              Atualmente focando em aperfeiçoar minhas habilidades no
-              desenvolvimento front-end atuando nas tecnologias mais usadas do
-              mercado
-            </p>
-            <Btn>Baixar Currículo</Btn>
+            <div className="main">
+              <h2>
+                <span className="name-color">Vitor Ramires</span>
+                <p>Developer</p>
+                <p>UX / UI</p>
+              </h2>
+            </div>
+
+            <motion.div
+              className="mask"
+              animate={{
+                WebkitMaskPosition: `${x - sizeMask }px`,
+                transition: { type: "tween", ease: "backOut" },
+              }}
+            >
+              <h2>
+                <span className="name-color-mask">Front-end Developer</span>
+                <p>Seja bem vindo! <span><img src={hiHand} alt="" /></span></p>
+              </h2>
+            </motion.div>
           </div>
         </BannerText>
-
-        <CircleDecoration>
-          <div className="circle"></div>
-        </CircleDecoration>
       </BannerContainer>
     </>
   );

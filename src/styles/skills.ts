@@ -31,25 +31,6 @@ export const SkillsIcons = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     place-items: center;
     gap: 70px 150px;
-    &::before {
-      position: absolute;
-      content: "";
-      width: 60%;
-      height: 60%;
-      background-image: linear-gradient(
-        5deg,
-        rgb(103, 132, 214),
-        rgb(0, 68, 255),
-        rgb(39, 83, 167)
-        
-      );
-      box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.25);
-      z-index: -1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-size: 200% auto;
-      border-radius: 15px;
     }
     .skill-icon {
       display: flex;
@@ -75,7 +56,6 @@ export const SkillsIcons = styled.div`
     @media screen and (max-width: 400px) {
       display: block;
     }
-  }
 `;
 
 export const SkillContext = styled.div`

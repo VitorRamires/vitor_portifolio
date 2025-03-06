@@ -13,8 +13,8 @@ function App() {
       <ThemeProvider theme={themeGlobal}>
         <GlobalStyle />
         <Header />
+        <Banner />
         <Centralize>
-          <Banner />
           <Skills />
           <Projects />
           <Experiences />

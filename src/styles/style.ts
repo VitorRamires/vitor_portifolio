@@ -34,8 +34,8 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     background-color: var(--primary-bg);
     background-image: repeating-linear-gradient(to right, transparent 0 49px,rgb(34, 34, 34) 49px 50px ), repeating-linear-gradient(to bottom, transparent 0 49px,rgb(34, 34, 34) 49px 50px);
-    background-attachment: fixed;
     background-size: 100px 100px, 100px 100px, 200% 200%;
+    background-attachment: fixed;
     animation: moveBG 10s linear infinite;
     &::before{
       background: linear-gradient(to right, #3496ff, #2d5eff);
@@ -74,20 +74,6 @@ export const Centralize = styled.div`
   margin: 0 auto;
 `;
 
-export const Btn = styled.button`
-  display: block;
-  width: 250px;
-  max-width: 100%;
-  padding: 15px 25px;
-  background-color: ${({ theme }) => theme.btnBg};
-  border-radius: 3px;
-  border: none;
-  color: ${({ theme }) => theme.primaryColor};
-  font-size: 1.4rem;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-`;
 
 export const NormalText = styled.p`
   color: ${({ theme }) => theme.secundaryColorColor};

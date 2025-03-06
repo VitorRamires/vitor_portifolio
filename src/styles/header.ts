@@ -20,6 +20,10 @@ export const HeaderContainer = styled.div`
       display: none;
     }
   }
+
+  @media screen and (max-width: 820px) {
+    display: block;
+  }
 `;
 
 export const LogoName = styled.h3`
@@ -28,4 +32,7 @@ export const LogoName = styled.h3`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media screen and (max-width: 820px) {
+    text-align: center;
+  }
 `;
