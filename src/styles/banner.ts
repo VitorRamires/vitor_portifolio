@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
   position: relative;
-  overflow: hidden;
+
 
   @media screen and (max-width: 1024px) {
     border-bottom: none;
@@ -108,26 +108,14 @@ export const BannerText = styled.div`
       top: 30px;
       left: 0;
       background: rgb(10, 138, 223);
-      background-image: repeating-linear-gradient(
-          to right,
-          transparent 0 49px,
-          rgb(13, 126, 202) 49px 50px
-        ),
-        repeating-linear-gradient(
-          to bottom,
-          transparent 0 49px,
-          rgb(13, 126, 202) 49px 50px
-        );
-      background-size: 100px 100px, 100px 100px, 200% 200%;
-      background-attachment: fixed;
-      animation: moveBG 10s linear infinite;
+    
       mask-image: url(../../public/icons/mask-circle.svg);
       -webkit-mask-image: url(url(../../public/icons/mask-circle.svg));
       mask-repeat: no-repeat;
-      mask-size: 2300px;
+      mask-size: 250px;
 
-      p {
-        font-size: 1.5rem;
+      h2{
+        color: #ffffff !important;
       }
 
       .name-color-mask {
@@ -156,12 +144,6 @@ export const BannerText = styled.div`
 
     @media screen and (max-width: 820px) {
       height: 70vh;
-    }
-
-    @keyframes mobileAnimation {
-      to {
-        background-position: 200% center;
-      }
     }
   }
 `;

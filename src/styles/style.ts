@@ -35,8 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--primary-bg);
     background-image: repeating-linear-gradient(to right, transparent 0 49px,rgb(34, 34, 34) 49px 50px ), repeating-linear-gradient(to bottom, transparent 0 49px,rgb(34, 34, 34) 49px 50px);
     background-size: 100px 100px, 100px 100px, 200% 200%;
-    background-attachment: fixed;
-    animation: moveBG 10s linear infinite;
+    animation: moveBG 35s linear infinite;
     &::before{
       background: linear-gradient(to right, #3496ff, #2d5eff);
       z-index: -1;
