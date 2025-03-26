@@ -1,0 +1,61 @@
+.navheader {
+  position: fixed;
+  top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.add-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-links img {
+  width: 40px;
+  height: auto;
+}
+
+.menu {
+  width: 350px;
+  max-width: 100%;
+  background-color: var(--blue4);
+  padding:25px 25px 25px 70px;
+}
+
+.menu .btn-menu {
+  position: relative;
+  width: 55px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.menu .retangle {
+  width: 100%;
+  padding: 3px 0;
+  background-color: var(--white1);
+  margin-top: 8px;
+  margin-left: auto;
+  border-radius: 4px;
+}
+
+.menu .retangle:nth-child(2) {
+  width: 70%;
+}
+
+.menu nav {
+  opacity: 1;
+}
+
+.menu nav ul li {
+  margin-top: 20px;
+}
+
+.menu nav ul li a {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: var(--white1);
+}

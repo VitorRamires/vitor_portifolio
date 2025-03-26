@@ -1,7 +1,9 @@
+import { NavHeader } from "./components/nav-header";
+
 function App() {
   return (
     <>
-      <h2>Sendo refeito!</h2>
+      <NavHeader />
     </>
   );
 }

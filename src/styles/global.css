@@ -1,0 +1,41 @@
+:root {
+  --backgroundColor: #111621;
+  --orange1: #ff4f67;
+  --white1: #ffffff;
+  --gray1: #b6bec3;
+  --blue1: #9eb9cf;
+  --blue2: #506086;
+  --blue3: #121825;
+  --blue4: #151a28;
+}
+
+@font-face {
+  font-family: "Oxianium";
+  src: url(../assets/fonts/Oxanium-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--white1);
+  font-family: "Oxianium";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
