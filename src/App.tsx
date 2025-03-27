@@ -1,9 +1,13 @@
+import { Banner } from "./components/banner";
 import { NavHeader } from "./components/nav-header";
 
 function App() {
   return (
     <>
-      <NavHeader />
+      <div className="center">
+        <NavHeader />
+        <Banner />
+      </div>
     </>
   );
 }

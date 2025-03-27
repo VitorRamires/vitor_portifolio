@@ -1,0 +1,13 @@
+.banner-title h2{
+  font-size: 5rem;
+  font-weight:400;
+}
+
+.banner-title :nth-child(2){
+  color: var(--orange1);
+  margin-left:45px;
+}
+
+.banner-title h2 span{
+  font-weight: bold;
+}

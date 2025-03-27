@@ -1,6 +1,6 @@
 :root {
   --backgroundColor: #111621;
-  --orange1: #ff4f67;
+  --orange1: #FF784F;
   --white1: #ffffff;
   --gray1: #b6bec3;
   --blue1: #9eb9cf;
@@ -12,6 +12,11 @@
 @font-face {
   font-family: "Oxianium";
   src: url(../assets/fonts/Oxanium-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../assets/fonts/Lato-Regular.ttf);
 }
 
 * {
@@ -39,3 +44,8 @@ img {
   height: 100%;
 }
 
+.center{
+  width: 1150px;
+  max-width: 90%;
+  margin:0 auto;
+}
