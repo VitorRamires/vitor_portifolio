@@ -1,13 +1,74 @@
-.banner-title h2{
-  font-size: 5rem;
-  font-weight:400;
+.info-banner {
+  font-family: "Oxianium";
+  text-align: center;
+
+  background-image: url("../assets/images/code-banner.jpg");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding-top: 40vh;
 }
 
-.banner-title :nth-child(2){
-  color: var(--orange1);
-  margin-left:45px;
+.overlay-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(180deg, #191919e7, #191919);
 }
 
-.banner-title h2 span{
-  font-weight: bold;
+.banner-titles {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  
+  text-align: center;
+}
+
+.banner-titles .name {
+  color: var(--MainGreen);
+  letter-spacing: 15px;
+  font-size: 5.5rem;
+}
+
+.banner-titles .role {
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "Lato";
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:3rem auto 0 auto;
+  gap: 25px;
+}
+
+.links img {
+  position: relative;
+  width: 75px;
+  height: 75px;
+
+  background-color: var(--LighterBlack);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--DarkGreen);
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.links img:hover {
+  transform: translateX(5px);
+  transform: translateY(-5px);
+  box-shadow: 5px 5px var(--DarkGreen);
 }

@@ -1,19 +1,20 @@
-import { Text } from "./text/mainTexts";
+import linkedin from "../assets/icons/linkedin.svg";
+import github from "../assets/icons/github.svg";
 
-export function Banner() {
+export function InfoBanner() {
   return (
-    <>
-      <div className="banner-title">
-        <h2>Olá, me chamo <span>Vitor</span></h2>
-        <h2>e sou dev <span>Front-end</span></h2>
-      </div>
+    <div className="info-banner">
+      <div className="overlay-banner"></div>
 
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero
-        felis, tempor nec lacus ut, semper mollis mauris. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Morbi at lacus eu velit egestas
-        viverra ac quis nunc. Curabitur imperdiet nisl fermentum.
-      </Text>
-    </>
+      <div className="center banner-titles">
+        <p className="name">Vitor Ramires</p>
+        <p className="role">Front-end developer</p>
+
+        <div className="links">
+          <img src={linkedin} alt="" />
+          <img src={github} alt="" />
+        </div>
+      </div>
+    </div>
   );
 }

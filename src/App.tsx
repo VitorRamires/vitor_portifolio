@@ -1,15 +1,14 @@
-import { Banner } from "./components/banner";
-import { NavHeader } from "./components/nav-header";
+import { InfoBanner } from "./components/banner";
+import { Menu } from "./components/menu";
 
 function App() {
   return (
     <>
-      <div className="center">
-        <NavHeader />
-        <Banner />
-      </div>
+      <Menu />
+      <InfoBanner />
     </>
   );
 }
 
 export default App;
+//
