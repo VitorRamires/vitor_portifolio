@@ -1,0 +1,80 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+
+  color: var(--textColor);
+}
+
+.about-info,
+.about-soft_skills {
+  width: 50%;
+  position: relative;
+}
+
+.about-info .about-text {
+  font-family: "Lato";
+  line-height: 1.5rem;
+}
+
+.about-text p {
+  margin: 15px 0;
+}
+
+.about-soft_skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 15px;
+}
+
+.about-soft_skills ul li {
+  width: 100%;
+  padding: 30px;
+
+  text-align: center;
+  backdrop-filter: blur(15px);
+  background-color: var(--TransparentBG);
+  font-size: 1rem;
+  font-family: "Oxianium";
+  color: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--DarkGreen);
+}
+
+.about .decoration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60%;
+  height: 80%;
+
+  background-color: var(--MainGreen);
+}
+
+.about button {
+  width: 250px;
+  max-width: 100%;
+
+  padding: 12px;
+  margin-top: 25px;
+
+  font-size: 1.05rem;
+  background-color: var(--LighterBlack);
+  border: 1px solid var(--DarkGreen);
+  border-radius: 5px;
+  color: var(--white);
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  font-family: "Oxianium";
+}
+
+.about button:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 0 var(--DarkGreen);
+}

@@ -4,8 +4,9 @@
   --MainGreen: #b2ff00;
   --DarkGreen: #6b9900;
   --white: #ffffff;
-  --textColor: #d4d4d4;
+  --textColor: #c9c6c6;
   --Gray: #727272;
+  --TransparentBG: #222222b0;
 }
 
 @font-face {
@@ -42,7 +43,24 @@ body {
 }
 
 .center {
-  width: 1150px;
+  width: 1350px;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.title-section {
+  font-family: "Oxianium";
+}
+
+.title {
+  color: var(--white);
+  font-size: 3.5rem;
+  text-shadow: 3px 2px 2px var(--DarkGreen);
+  font-weight: 400;
+
+  margin-top:5px;
+}
+
+.synonim{
+  color: var(--Gray);
 }
