@@ -2,7 +2,7 @@ import placeholder from "../assets/images/placeholder.png";
 
 export const ProjectsData = [
   {
-    name: "project 01",
+    name: "Projeto 01",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Pellentesque sed elit malesuada, fringilla dui vitae, efficitur
     ante. In non est placerat, venenatis augue a, tincidunt nulla.
@@ -11,7 +11,7 @@ export const ProjectsData = [
     image: placeholder,
   },
   {
-    name: "project 02",
+    name: "Projeto 02",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Pellentesque sed elit malesuada, fringilla dui vitae, efficitur
     ante. In non est placerat, venenatis augue a, tincidunt nulla.
@@ -20,7 +20,7 @@ export const ProjectsData = [
     image: placeholder,
   },
   {
-    name: "project 03",
+    name: "Projeto 03",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Pellentesque sed elit malesuada, fringilla dui vitae, efficitur
     ante. In non est placerat, venenatis augue a, tincidunt nulla.

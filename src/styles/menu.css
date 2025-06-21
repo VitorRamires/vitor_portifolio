@@ -12,7 +12,7 @@
   border-radius: 10px;
 }
 
-.menu::after,
+/*.menu::after,
 .menu::before {
   content: "";
   position: relative;
@@ -21,7 +21,7 @@
   width: 100%;
   height: 2px;
   background-color: var(--LighterBlack);
-}
+}*/
 
 .menu ul {
   display: flex;

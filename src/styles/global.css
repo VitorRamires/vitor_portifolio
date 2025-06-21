@@ -12,11 +12,13 @@
 @font-face {
   font-family: "Oxianium";
   src: url(../assets/fonts/Oxanium-VariableFont_wght.ttf);
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "Lato";
   src: url(../assets/fonts/Lato-Regular.ttf);
+  font-display: fallback;
 }
 
 * {
@@ -58,9 +60,9 @@ body {
   text-shadow: 3px 2px 2px var(--DarkGreen);
   font-weight: 400;
 
-  margin-top:5px;
+  margin-top: 5px;
 }
 
-.synonim{
+.synonim {
   color: var(--Gray);
 }
