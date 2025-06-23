@@ -4,9 +4,8 @@
 }
 
 .projects-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
 
   margin-top: 6rem;
@@ -25,7 +24,7 @@
   border-radius: 8px;
 
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .projects-box img {
@@ -38,21 +37,23 @@
 
 .tags {
   position: absolute;
-  bottom: -20%;
+  bottom: -15px;
   left: 0;
 
   width: 100%;
   padding: 20px 10px;
 
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.822));
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.932));
   color: var(--backgroundColor);
   font-family: "Oxianium";
-  transition: 0.3s;
+  transition: 0.2s;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+
+  opacity: 0;
 }
 
 .tags p {
@@ -63,12 +64,9 @@
   padding: 10px;
 }
 
-.projects-box:hover .tags {
+.project-img:hover .tags {
   bottom: 0;
-}
-
-.projects-box:hover .project-img {
-  box-shadow: 0 0 10px 5px var(--DarkGreen);
+  opacity: 1;
 }
 
 .project-name {

@@ -8,19 +8,21 @@ export function About() {
           <Title synonim="Resumo" title="Sobre mim" />
           <div className="about-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque sed elit malesuada, fringilla dui vitae, efficitur
-              ante. In non est placerat, venenatis augue a, tincidunt nulla.
-              Maecenas maximus dolor ut urna efficitur dapibus. Curabitur et
-              felis vel odio placerat varius. Etiam egestas vehicula elit, non
-              sodales felis vestibulum non. In a posuere est. Nullam vel
-              condimentum sem. Donec tincidunt nunc ex, a consequat velit
-              viverra vitae. Quisque tempor sem{" "}
+              Sou Vitor tenho e sou desenvolvedor Front-end apaixonado por
+              tecnologia, natural de Porto Alegre, Rio Grande do Sul. Sempre
+              busco unir criatividade e técnica para entregar soluções digitais
+              eficazes. Atualmente minhas principais tencologia são HTML5, CSS3,
+              JavaScript e React.js. Mas procuro estar sempre estudando outras
+              ferramentas e linguagens.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque sed elit malesuada, fringilla dui vitae, efficitur
-              ante. In non est placerat, venenatis augue a, tincidunt nulla
+              Já tive algumas experiencias profisionais como desenvolvimento de
+              banners publicitários e materiais digitais para marcas de alto
+              impacto, suporte técnico em banco de dados ajudando na
+              identificação e resolução de bugs junto aos clientes e atualmente,
+              estou trabalhando no desenvolvimento front-end de uma plataforma
+              de gestão jurídica, e sigo me aperfeiçoando por meio de projetos
+              pessoais e cursos focados em frameworks modernos.
             </p>
             <button> Baixar Currículo </button>
           </div>

@@ -11,11 +11,11 @@ export function Projects() {
             return (
               <div className="projects-box">
                 <div className="project-img">
-                  <img src={project.image} alt="" />
+                  <a href={project.hyperlink} target="#"><img src={project.image} alt="project-image" /></a>
                   <div className="tags">
-                    <p>teste</p>
-                    <p>teste</p>
-                    <p>teste</p>
+                    {project.tags.map((tag) => {
+                      return <p>{tag}</p>;
+                    })}
                   </div>
                 </div>
                 <p className="project-name">{project.name}</p>
