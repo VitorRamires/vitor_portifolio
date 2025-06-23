@@ -3,19 +3,19 @@ export function Menu() {
     <div className="menu">
       <ul>
         <li>
-          <a href="">Ínicio</a>
+          <a href="#info-banner">Ínicio</a>
         </li>
         <li>
-          <a href="">Sobre</a>
+          <a href="#about">Sobre</a>
         </li>
         <li>
-          <a href="">Techs</a>
+          <a href="#skills">Techs</a>
         </li>
         <li>
-          <a href="">Projetos</a>
+          <a href="#projects">Projetos</a>
         </li>
         <li>
-          <a href="">Experiências</a>
+          <a href="#experiences">Experiências</a>
         </li>
       </ul>
     </div>

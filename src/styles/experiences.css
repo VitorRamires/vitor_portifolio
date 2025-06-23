@@ -1,38 +1,38 @@
-.experiences .title-section {
+#experiences .title-section {
   text-align: center;
   margin: 15rem 0 5rem;
 }
 
 .experiences-wrapper {
-  background: linear-gradient(180deg, #2b2a2a, #191919);
+  position: relative;
   padding: 100px;
-  border-radius: 10px;
+}
+
+.timeline {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: #3b3b3b;
+  z-index: -1;
+  border-radius: 5px 5px 0 0;
 }
 
 .experience-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
   font-size: 1.4rem;
   font-family: "Oxianium";
 
   background-color: var(--MainGreen);
-  padding: 25px;
+  padding: 25px 50px;
   border-radius: 7px;
   box-shadow: 0 0 10px 5px var(--DarkGreen);
-}
 
-.line {
-  position: relative;
-  width: 25px;
-  height: 5px;
-  background-color: var(--DarkGreen);
-  margin: 2px 0;
-}
-
-.plus {
-  position: relative;
-  cursor: pointer;
+  width: 280px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .line:nth-child(1) {
@@ -56,8 +56,8 @@
   padding: 25px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 6rem;
+  justify-content: space-evenly;
+  gap: 35px;
   font-family: "Oxianium";
   font-weight: 400;
   color: #eeeeee;
@@ -65,45 +65,42 @@
   border-radius: 7px 7px 0 0;
   box-shadow: 0 5px 15px 0 #00000071;
   z-index: 4;
-}
-
-.exp-header-left{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 9rem;
+  flex-wrap: wrap;
 }
 
 .item-extra-info {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 15px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .item-extra-info img {
-  width: 35px;
+  width: 25px;
   height: auto;
 }
 
 .experience-description {
-  background-color: #353535;
-  padding: 55px 25px 25px 25px;
+  background-color: #35353585;
+  padding: 55px;
   font-size: 0.9rem;
   font-family: "Lato";
   color: var(--textColor);
   letter-spacing: 1px;
   border-radius: 0 0 5px 5px;
+  backdrop-filter: blur(5px);
 }
 
-.experience-description p{
+.experience-description p:not(.tag) {
   margin-bottom: 25px;
+  line-height: 20px;
 }
 
 .tech-tags {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin-top: 55px;
   gap: 25px;
   font-size: 0.9rem;
@@ -120,4 +117,17 @@
 
 .experience {
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1076px) {
+  .experiences-wrapper {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .tag {
+    width: 100%;
+    text-align: center;
+  }
 }

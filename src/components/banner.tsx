@@ -3,11 +3,11 @@ import github from "../assets/icons/github.svg";
 
 export function InfoBanner() {
   return (
-    <div className="info-banner">
+    <section id="info-banner">
       <div className="overlay-banner"></div>
 
       <div className="center banner-titles">
-        <p className="name">Vitor Ramires</p>
+        <div className="name"><span>Vitor Ramires</span></div>
         <p className="role">Front-end developer</p>
 
         <div className="links">
@@ -15,6 +15,6 @@ export function InfoBanner() {
           <img src={github} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

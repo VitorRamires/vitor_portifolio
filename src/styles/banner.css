@@ -1,11 +1,9 @@
-.info-banner {
+#info-banner {
   font-family: "Oxianium";
   text-align: center;
-
   background-image: url("../assets/images/code-banner.avif");
   background-size: cover;
   background-position: center;
-
   position: relative;
   height: 100vh;
   width: 100%;
@@ -19,7 +17,6 @@
   z-index: 1;
   top: 0;
   left: 0;
-
   background: linear-gradient(180deg, #191919e7, #191919);
 }
 
@@ -27,14 +24,33 @@
   position: relative;
   margin: auto;
   z-index: 2;
-  
   text-align: center;
 }
 
 .banner-titles .name {
+  width: max-content;
+  position: relative;
   color: var(--MainGreen);
-  letter-spacing: 15px;
   font-size: 5.5rem;
+  margin: 0 auto;
+}
+
+.name span {
+  background: linear-gradient(
+    to left,
+    var(--MainGreen),
+    var(--DarkGreen),
+    var(--white),
+    var(--white),
+    var(--white),
+    var(--DarkGreen),
+    var(--MainGreen)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: gradientName 3s linear infinite;
+  background-size: 200% 50%;
 }
 
 .banner-titles .role {
@@ -49,7 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:3rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   gap: 25px;
 }
 
@@ -57,12 +73,10 @@
   position: relative;
   width: 75px;
   height: 75px;
-
   background-color: var(--LighterBlack);
   padding: 15px;
   border-radius: 8px;
   border: 1px solid var(--DarkGreen);
-
   cursor: pointer;
   transition: 0.2s;
 }
@@ -71,4 +85,41 @@
   transform: translateX(5px);
   transform: translateY(-5px);
   box-shadow: 5px 5px var(--DarkGreen);
+}
+
+@keyframes gradientName {
+  0% {
+    text-shadow: 5px 0px 10px transparent;
+  }
+
+  45% {
+    background-position: -100% 50%;
+    text-shadow: 5px 0px 10px var(--DarkGreen);
+  }
+
+  100% {
+    background-position: -200% 50%;
+    text-shadow: 5px 0px 10px 5px transparent;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .banner-titles .name {
+    font-size: 3.5rem;
+  }
+
+  .banner-titles .role {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #info-banner {
+    height: 70vh;
+    padding-top: 25vh;
+  }
+
+  .banner-titles .name {
+    font-size: 3rem;
+  }
 }

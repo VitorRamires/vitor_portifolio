@@ -2,23 +2,16 @@ import React from "react";
 import { experiencesData } from "../data/exp";
 import badge from "../assets/icons/person-badge.svg";
 import geo from "../assets/icons/geo.svg";
+import calendar from "../assets/icons/calendar.svg";
 
 export function Experience() {
   return (
     <React.Fragment>
-      {experiencesData.map((exp) => {
+      {experiencesData.map((exp, index) => {
         return (
-          <div className="experience" key={exp.company + exp.role}>
+          <div className="experience" key={index}>
             <div className="experience-header">
               <p className="company">{exp.company}</p>
-
-              <div className="exp-header-left">
-                <p className="atuation-time">{exp.time}</p>
-                <div className="plus">
-                  <div className="line"></div>
-                  <div className="line"></div>
-                </div>
-              </div>
             </div>
 
             <div className="experience-info">
@@ -30,18 +23,26 @@ export function Experience() {
                   {exp.location}
                 </p>
                 <p className="item-extra-info">
-                  <img src={badge} alt="" />
+                  <span>
+                    <img src={badge} alt="" />
+                  </span>
                   {exp.role}
+                </p>
+                <p className="item-extra-info">
+                  <span>
+                    <img src={calendar} alt="" />
+                  </span>
+                  {exp.time}
                 </p>
               </div>
               <div className="experience-description">
-                {exp.description.map((text) => {
-                  return <p>{text}</p>;
+                {exp.description.map((text, index) => {
+                  return <p key={index}>{text}</p>;
                 })}
                 <div className="tech-tags">
-                  {exp.tags.map((tag) => {
+                  {exp.tags.map((tag, index) => {
                     return (
-                      <p className="tag" key={tag}>
+                      <p className="tag" key={index}>
                         {tag}
                       </p>
                     );

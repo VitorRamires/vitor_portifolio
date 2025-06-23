@@ -1,4 +1,4 @@
-.about {
+#about {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@
   border: 1px solid var(--DarkGreen);
 }
 
-.about .decoration {
+#about .decoration {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,7 +55,7 @@
   background-color: var(--MainGreen);
 }
 
-.about button {
+#about button {
   width: 250px;
   max-width: 100%;
 
@@ -74,7 +74,22 @@
   font-family: "Oxianium";
 }
 
-.about button:hover {
+#about button:hover {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 0 0 var(--DarkGreen);
+}
+
+@media screen and (max-width: 748px) {
+  #about {
+    flex-wrap: wrap;
+  }
+
+  .about-soft_skills ul {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .about-info,
+  .about-soft_skills {
+    width: 100%;
+  }
 }

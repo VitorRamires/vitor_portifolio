@@ -3,7 +3,7 @@ import { Title } from "./title";
 export function About() {
   return (
     <div className="center">
-      <section className="about">
+      <section id="about">
         <div className="about-info">
           <Title synonim="Resumo" title="Sobre mim" />
           <div className="about-text">

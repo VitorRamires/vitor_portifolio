@@ -34,7 +34,7 @@ export const experiencesData = [
   },
 
   {
-    company: "Trainee",
+    company: "Evonnis",
     time: `2019 - 2020`,
     location: "Brasil - RS",
     role: "Trainee",

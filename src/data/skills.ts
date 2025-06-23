@@ -8,4 +8,5 @@ export const SkillsData = [
   "Typescript",
   "Styled-components",
   "Radix UI",
+  "Motion Frame"
 ];

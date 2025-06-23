@@ -3,10 +3,11 @@ import { Experience } from "./experience.tsx";
 
 export function Experiences() {
   return (
-    <section className="experiences">
+    <section id="experiences">
       <div className="center">
         <Title synonim="Trajetória" title="Experiências" />
         <div className="experiences-wrapper">
+          <div className="timeline"></div>
           <Experience />
         </div>
       </div>

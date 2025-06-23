@@ -1,4 +1,4 @@
-.skills {
+#skills {
   position: relative;
   margin-top: 10rem;
   box-shadow: 0 10px 10px 0 #000000be;
@@ -9,9 +9,13 @@
 }
 
 .skills-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  z-index: 7;
 }
 
 .skills-wrapper ul {
@@ -23,7 +27,7 @@
   margin: 0 auto;
   color: var(--white);
   font-family: "Oxianium";
-  width: 90%;
+  justify-content: center;
 }
 
 .skills-box {
@@ -45,7 +49,7 @@
   border: 1px solid var(--DarkGreen);
 }
 
-.skills .decoration {
+#skills .decoration {
   position: absolute;
   top: 0;
   right: 0;
@@ -56,7 +60,7 @@
   border-radius: 120px 0 0 120px;
 }
 
-.skills .arrow {
+#skills .arrow {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -70,8 +74,24 @@
   border-radius: 5px;
 }
 
-.skills .arrow img {
+#skills .arrow img {
   width: 60%;
   height: auto;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .skills-box {
+    width: 100%;
+  }
+
+  .skills-wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills-wrapper li {
+    width: 100%;
+  }
 }
