@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.about-soft_skills {
+  transform-style: preserve-3d;
+}
+
 .about-info .about-text {
   font-family: "Lato";
   line-height: 1.5rem;
@@ -32,15 +36,16 @@
 .about-soft_skills ul li {
   width: 100%;
   padding: 30px;
-
   text-align: center;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
   background-color: var(--TransparentBG);
   font-size: 1rem;
   font-family: "Oxianium";
   color: var(--white);
   border-radius: 5px;
   border: 1px solid var(--DarkGreen);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.377);
+  transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 #about .decoration {
@@ -48,11 +53,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width: 60%;
-  height: 80%;
-
+  width: 40%;
+  height: 70%;
+  filter: blur(45px);
   background-color: var(--MainGreen);
+  animation: animationBlur 3s ease-in infinite;
 }
 
 #about button {
@@ -77,6 +82,23 @@
 #about button:hover {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 0 0 var(--DarkGreen);
+}
+
+@keyframes animationBlur {
+  0% {
+    filter: blur(45px);
+    background-color: var(--MainGreen);
+  }
+
+  50% {
+    filter: blur(35px);
+    background-color: var(--DarkGreen);
+  }
+
+  100% {
+    filter: blur(45px);
+    background-color: var(--MainGreen);
+  }
 }
 
 @media screen and (max-width: 748px) {
