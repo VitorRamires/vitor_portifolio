@@ -1,5 +1,5 @@
 :root {
-  --backgroundColor: #191919;
+  --backgroundColor: #141414;
   --LighterBlack: #2a2a2a;
   --MainGreen: #b3ff00;
   --DarkGreen: #6b9900;
@@ -45,18 +45,11 @@ img {
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    var(--backgroundColor),
-    var(--backgroundColor),
-    var(--backgroundColor),
-    var(--backgroundColor),
-    #1b1b1b
-  );
+  background-color: var(--backgroundColor);
 }
 
 .center {
-  width: 1350px;
+  width: 1250px;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -76,4 +69,60 @@ body {
 .synonim {
   color: var(--Gray);
   letter-spacing: 3px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 45%);
+  width: 45px;
+  height: 65px;
+  background-color: var(--MainGreen);
+  z-index: 3;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.arrow img {
+  position: absolute;
+  width: 27px;
+  left: 52%;
+  transform: translate(-50%, 0);
+  height: 55px;
+  animation: animationArrow 1s infinite ease-out backwards;
+}
+
+.arrow img:nth-child(2) {
+  animation: animationArrow 1s 0.25s infinite ease-out backwards;
+}
+
+.arrow img:nth-child(3) {
+  animation-delay: 2s;
+  animation: animationArrow 1s 0.5s infinite ease-out backwards;
+}
+
+@keyframes animationArrow {
+  0% {
+    transform: translate(-50%, -45px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 45px);
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .title-section {
+    text-align: center;
+  }
 }

@@ -1,6 +1,14 @@
+#experiences {
+  padding-top: 8rem;
+  padding-bottom: 35px;
+  box-shadow: rgba(0, 0, 0, 0.856) 0px -5px 20px 0px;
+  position: relative;
+  background: radial-gradient(ellipse at top, #1a1a1a 0%, #141414 60%);
+}
+
 #experiences .title-section {
   text-align: center;
-  margin: 15rem 0 5rem;
+  margin-bottom: 5rem;
 }
 
 .experiences-wrapper {
@@ -15,7 +23,7 @@
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, #fff, #ffffff41, #ffffff0e, #ffffff00);
-  z-index: -1;
+  z-index: 1;
   border-radius: 5px 5px 0 0;
 }
 
@@ -25,20 +33,14 @@
   font-size: 1.4rem;
   font-family: "Oxianium";
   z-index: 10;
-  background: linear-gradient(
-    to right,
-    var(--white),
-    var(--MainGreen),
-    var(--white)
-  );
-  animation: animationBG 6s linear infinite;
   background-size: 200%;
   padding: 15px 25px;
   border-radius: 12px;
   margin-bottom: 15px;
-  box-shadow: 0 0 10px 2px var(--DarkGreen);
+  box-shadow: 0 0 10px 2px var(--LighterBlack);
   width: 280px;
   max-width: 100%;
+  background: var(--MainGreen);
 }
 
 .experience-header::after {
@@ -48,17 +50,11 @@
   width: 32px;
   max-width: 100%;
   height: 10px;
-  background: linear-gradient(
-    to right,
-    var(--MainGreen),
-    var(--white),
-    var(--MainGreen)
-  );
-  animation: animationBG 6s linear infinite;
   background-size: 200%;
   left: 0;
   top: 50%;
   transform: translate(-100%, -50%);
+  background: var(--MainGreen);
 }
 
 .experience-header::before {
@@ -68,18 +64,12 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: linear-gradient(
-    to right,
-    var(--white),
-    var(--MainGreen),
-    var(--white)
-  );
-  animation: animationBG 6s linear infinite;
   background-size: 200%;
   transform: translate(-200%, -50%);
   left: 0;
   top: 50%;
   z-index: 12;
+  background: var(--MainGreen);
 }
 
 .line:nth-child(1) {
@@ -92,16 +82,10 @@
   transform: rotate(90deg);
 }
 
-.experience-info {
-  box-shadow: 8px 8px 5px 0 black;
-  border-radius: 12px;
-}
-
 .extra-informations {
   position: relative;
-  background-color: var(--Gray);
   width: 100%;
-  padding: 35px 25px 25px 55px;
+  padding: 15px 0 35px 0;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -111,7 +95,6 @@
   color: #eeeeee;
   font-size: 1.05rem;
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 5px 15px 0 #00000071;
   z-index: 4;
   flex-wrap: wrap;
 }
@@ -129,14 +112,11 @@
 }
 
 .experience-description {
-  background-color: #353535ee;
-  padding: 55px;
+  padding: 15px 0;
   font-size: 0.9rem;
   font-family: "Lato";
   color: var(--textColor);
   letter-spacing: 1px;
-  border-radius: 0 0 12px 12px;
-  backdrop-filter: blur(5px);
 }
 
 .experience-description p:not(.tag) {
@@ -161,15 +141,33 @@
   border: 1px solid var(--MainGreen);
   border-radius: 5px;
   color: var(--white);
+  box-shadow: 3px 3px 4px 0 black;
 }
 
 .experience {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
-@keyframes animationBG {
-  to {
-    background-position: -200% 50%;
+.experience:nth-last-child {
+  margin-bottom: unset;
+}
+
+@media screen and (max-width: 848px) {
+  .extra-informations {
+    display: block;
+  }
+
+  .item-extra-info {
+    justify-content: unset;
+    margin-bottom: 25px;
+  }
+
+  .item-extra-info:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .experience-description {
+    padding: 35px 15px 25px 15px;
   }
 }
 
@@ -177,5 +175,38 @@
   .tag {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .experience-description p {
+    font-size: 0.6rem;
+  }
+
+  .experience-description p:not(.tag) {
+    line-height: 15px;
+  }
+
+  .experience-header::before,
+  .experience-header::after {
+    display: none;
+  }
+
+  .experience-header {
+    margin: 0 auto 15px auto;
+  }
+
+  .timeline {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .experiences-wrapper {
+    padding: 0 15px;
+  }
+
+  .extra-informations {
+    font-size: 0.8rem;
   }
 }
