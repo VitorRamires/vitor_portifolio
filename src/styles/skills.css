@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   margin-top: 10rem;
-  box-shadow: 0 10px 10px 0 #000000be;
+  box-shadow: 0 10px 10px 0 #00000048;
   background: var(--backgroundColor);
   margin-bottom: 300px;
 
@@ -89,19 +89,32 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 45%);
-  width: 45px;
-  height: auto;
+  width: 55px;
+  height: 75px;
   background-color: var(--MainGreen);
   z-index: 3;
   text-align: center;
   padding: 10px 0;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 #skills .arrow img {
-  width: 60%;
-  height: auto;
-  margin: 0 auto;
+  position: absolute;
+  width: 30px;
+  left: 51%;
+  transform: translate(-50%, 0);
+  height: 55px;
+  animation: animationArrow 1s infinite ease-out backwards;
+}
+
+#skills .arrow img:nth-child(2) {
+  animation: animationArrow 1s 0.25s infinite ease-out backwards;
+}
+
+#skills .arrow img:nth-child(3) {
+  animation-delay: 2s;
+  animation: animationArrow 1s 0.5s infinite ease-out backwards;
 }
 
 #particleCanvas {
@@ -110,6 +123,23 @@
   left: 0;
   width: auto;
   height: 100%;
+}
+
+@keyframes animationArrow {
+  0% {
+    transform: translate(-50%, -45px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 45px);
+  }
 }
 
 @media screen and (max-width: 1000px) {

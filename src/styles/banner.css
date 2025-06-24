@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 530px) {
   .banner-titles .name {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .banner-titles .role {
@@ -114,11 +114,7 @@
 
 @media screen and (max-width: 380px) {
   #info-banner {
-    height: 70vh;
-    padding-top: 25vh;
-  }
-
-  .banner-titles .name {
-    font-size: 3rem;
+    height: 100vh;
+    padding-top: 35vh;
   }
 }

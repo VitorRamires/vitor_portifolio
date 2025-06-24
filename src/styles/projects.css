@@ -35,6 +35,10 @@
   display: flex;
 }
 
+.project-img:hover{
+  box-shadow: 0 0 15px 3px var(--DarkGreen);
+}
+
 .tags {
   position: absolute;
   bottom: -15px;

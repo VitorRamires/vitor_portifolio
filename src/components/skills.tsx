@@ -3,7 +3,6 @@ import { Title } from "./title";
 import { SkillsData } from "../data/skills";
 import arrow from "../assets/icons/arrow.svg";
 
-
 export function Skills() {
   // animation particles
   useEffect(() => {
@@ -74,6 +73,8 @@ export function Skills() {
         </div>
       </div>
       <div className="arrow">
+        <img src={arrow} alt="arrow-down-icon" />
+        <img src={arrow} alt="arrow-down-icon" />
         <img src={arrow} alt="arrow-down-icon" />
       </div>
     </section>
