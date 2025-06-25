@@ -4,10 +4,11 @@
   background-image: url("../assets/images/code-banner.avif");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   height: 100vh;
   width: 100%;
-  padding-top: 40vh;
+  padding-top: 35vh;
 }
 
 .overlay-banner {
@@ -17,7 +18,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, #141414e1, #141414);
+  background: linear-gradient(180deg, #1b1a1ae1, #141414);
 }
 
 .banner-titles {
@@ -27,36 +28,37 @@
   text-align: center;
 }
 
-.banner-titles .name {
-  position: relative;
-  color: var(--MainGreen);
-  font-size: 5.5rem;
-  margin: 0 auto;
-}
-
-.name span {
+.banner-titles .name,
+.begin-animation .name {
   background: linear-gradient(
     to left,
+    var(--DarkGreen),
     var(--MainGreen),
-    var(--DarkGreen),
-    var(--white),
-    var(--white),
-    var(--white),
-    var(--DarkGreen),
-    var(--MainGreen)
+    var(--MainGreen),
+    var(--DarkGreen)
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation: gradientName 3s linear infinite;
   background-size: 200% 50%;
+}
+
+.banner-titles .name {
+  position: relative;
+  color: var(--MainGreen);
+  font-size: 6.5rem;
+  margin: 0 auto;
+}
+
+.begin-animation.name {
+  animation: gradientName 6s linear infinite;
 }
 
 .banner-titles .role {
   color: var(--white);
-  font-size: 2rem;
-  font-family: "Lato";
-  margin-top: 15px;
+  font-size: 1.5rem;
+  font-family: "Oxianium";
+  margin-top: 5px;
   letter-spacing: 3px;
 }
 
@@ -81,14 +83,15 @@
 }
 
 .links img:hover {
-  transform: translateX(5px);
-  transform: translateY(-5px);
+  transform: translateX(5px) !important;
+  transform: translateY(-5px) !important;
   box-shadow: 5px 5px var(--DarkGreen);
 }
 
 @keyframes gradientName {
   0% {
     text-shadow: 5px 0px 10px transparent;
+    background-position: 0 0;
   }
 
   45% {
@@ -102,6 +105,12 @@
   }
 }
 
+@media screen and (max-width: 717px) {
+  #info-banner {
+    padding-top: 25vh;
+  }
+}
+
 @media screen and (max-width: 530px) {
   .banner-titles .name {
     font-size: 4rem;
@@ -109,6 +118,10 @@
 
   .banner-titles .role {
     font-size: 1.5rem;
+  }
+
+  #info-banner {
+    padding-top: 40vh;
   }
 }
 

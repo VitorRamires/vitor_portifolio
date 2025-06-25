@@ -1,10 +1,13 @@
 import { useRef, useState } from "react";
 import { Title } from "./title";
+import { motion, useInView } from "framer-motion";
 
 export function About() {
   const [axisX, setAxisX] = useState(0);
   const [axisY, setAxisY] = useState(0);
   const divRef = useRef<HTMLDivElement>(null);
+  const animRef = useRef(null);
+  const inView = useInView(animRef, { amount: 0.5, once: true });
 
   function affectDegree(event: React.MouseEvent<HTMLDivElement>) {
     if (!divRef.current) return;
@@ -20,6 +23,30 @@ export function About() {
     setAxisY(offsetY / 10);
   }
 
+  const bannerAbout = {
+    hiddenLeft: {
+      opacity: 0,
+      x: -55,
+    },
+    hiddenRight: {
+      opacity: 0,
+      x: 55,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+
+    visibleOpacity: {
+      opacity: 1,
+      scale: 1,
+    },
+    hiddenOpacity: {
+      opacity: 0,
+      scale: 0.5,
+    },
+  };
+
   return (
     <div className="center" onMouseMove={affectDegree} ref={divRef}>
       <section
@@ -29,9 +56,15 @@ export function About() {
           setAxisX(0);
         }}
       >
-        <div className="about-info">
+        <motion.div className="about-info" ref={animRef}>
           <Title synonim="Resumo" title="Sobre mim" />
-          <div className="about-text">
+          <motion.div
+            variants={bannerAbout}
+            initial="hiddenLeft"
+            animate={inView ? "visible" : "hiddenLeft"}
+            className="about-text"
+            transition={{ duration: 0.5 }}
+          >
             <p>
               Sou desenvolvedor Front-end apaixonado por tecnologia, natural de
               Porto Alegre, Rio Grande do Sul. Sempre busco unir criatividade e
@@ -50,11 +83,22 @@ export function About() {
               pessoais e cursos focados em frameworks modernos.
             </p>
             <button> Baixar Currículo </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className="about-soft_skills">
-          <div className="decoration"></div>
-          <ul>
+          <motion.div
+            className="decoration"
+            variants={bannerAbout}
+            initial="hiddenRight"
+            animate={inView ? "visibleOpacity" : "hiddenOpacity"}
+            transition={{ delay: 0.5, duration: 2 }}
+          ></motion.div>
+          <motion.ul
+            variants={bannerAbout}
+            initial="hiddenRight"
+            animate={inView ? "visible" : "hiddenRight"}
+            transition={{ duration: 0.5 }}
+          >
             <li
               style={{
                 transform: `perspective(1200px) rotateY(${axisX}deg) rotateX(${axisY}deg)`,
@@ -83,7 +127,7 @@ export function About() {
             >
               Evolução Técnica
             </li>
-          </ul>
+          </motion.ul>
         </div>
       </section>
     </div>
