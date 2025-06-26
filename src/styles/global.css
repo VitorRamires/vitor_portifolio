@@ -46,6 +46,7 @@ img {
 
 body {
   background-color: var(--backgroundColor);
+  overflow-x: hidden;
 }
 
 .center {

@@ -3,7 +3,7 @@ export const experiencesData = [
     company: "Tintitech",
     time: `2024 - Até o momento`,
     location: "Brasil - RS",
-    role: "Front-end developer",
+    role: "Desenvolvedor Front-end",
     description: [
       `Durante o desenvolvimento do projeto, participei ativamente da criação do front-end utilizando HTML, CSS e JavaScript, 
     com foco na construção de uma plataforma de gestão responsiva para desktop e mobile. As interfaces foram elaboradas com base em protótipos 
@@ -20,7 +20,7 @@ export const experiencesData = [
     company: "Digital Business",
     time: `2021 - 2023`,
     location: "Brasil - RS",
-    role: "Front-end developer",
+    role: "Desenvolvedor Front-end",
     description: [
       `Atuei no desenvolvimento de anúncios interativos para websites de grandes marcas, como Microsoft, Hyundai, Disney, Sony, Dell, Intel e CNN, 
       utilizando HTML, CSS e JavaScript. As animações foram implementadas principalmente com o GreenSock Animation Platform (GSAP), garantindo interatividade 

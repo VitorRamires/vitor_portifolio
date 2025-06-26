@@ -1,9 +1,33 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Title } from "./title";
 import { SkillsData } from "../data/skills";
+import { motion, useInView } from "framer-motion";
 import arrow from "../assets/icons/arrow.svg";
 
 export function Skills() {
+  const animRef = useRef(null);
+  const inView = useInView(animRef, { amount: 0.25, once: true });
+
+  const animationSkills = {
+    hidden: {
+      scale: 0.8,
+      opacity: 0,
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      type: "tween" as const,
+    },
+    hiddenDecoration: {
+      width: 0,
+      opacity: 0,
+    },
+    visibleDecoration: {
+      width: 450,
+      opacity: 1,
+    },
+  };
+
   // animation particles
   useEffect(() => {
     const canvas = document.getElementById(
@@ -51,15 +75,32 @@ export function Skills() {
   }, []);
 
   return (
-    <section id="skills">
-      <div className="decoration">
+    <motion.section id="skills" ref={animRef}>
+      <motion.div
+        variants={animationSkills}
+        initial="hiddenDecoration"
+        animate={inView ? "visibleDecoration" : "hiddenDecoration"}
+        transition={{ duration: 0.3 }}
+        className="decoration"
+      >
         <canvas id="particleCanvas"></canvas>
-      </div>
+      </motion.div>
       <div className="center">
         <div className="skills-wrapper">
           <Title synonim="Habilidades" title="Skills Técnicas" />
-          <div className="skills-box">
-            <ul>
+          <motion.div
+            variants={animationSkills}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.5 }}
+            className="skills-box"
+          >
+            <motion.ul
+              variants={animationSkills}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
               {SkillsData.map((skill, index) => {
                 return (
                   <li key={index}>
@@ -68,8 +109,8 @@ export function Skills() {
                   </li>
                 );
               })}
-            </ul>
-          </div>
+            </motion.ul>
+          </motion.div>
         </div>
       </div>
       <div className="arrow">
@@ -77,6 +118,6 @@ export function Skills() {
         <img src={arrow} alt="arrow-down-icon" />
         <img src={arrow} alt="arrow-down-icon" />
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -7,7 +7,7 @@ export function About() {
   const [axisY, setAxisY] = useState(0);
   const divRef = useRef<HTMLDivElement>(null);
   const animRef = useRef(null);
-  const inView = useInView(animRef, { amount: 0.5, once: true });
+  const inView = useInView(animRef, { amount: 0.35, once: true });
 
   function affectDegree(event: React.MouseEvent<HTMLDivElement>) {
     if (!divRef.current) return;

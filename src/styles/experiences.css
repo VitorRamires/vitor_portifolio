@@ -21,10 +21,13 @@
   top: 0;
   left: 0;
   width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, #fff, #ffffff41, #ffffff0e, #ffffff00);
-  z-index: 1;
-  border-radius: 5px 5px 0 0;
+  height: 95%;
+  border-radius: 15px;
+}
+
+.timeline {
+  background: linear-gradient(180deg, var(--MainGreen) 0%, transparent 93%);
+  z-index: 2;
 }
 
 .experience-header {
@@ -146,6 +149,11 @@
 
 .experience {
   margin-bottom: 7rem;
+  position: relative;
+}
+
+.experience:nth-child(1) {
+  bottom: 15px;
 }
 
 .experience:nth-last-child {
@@ -154,7 +162,11 @@
 
 @media screen and (max-width: 848px) {
   .extra-informations {
-    display: block;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+    padding-left: 15px;
   }
 
   .item-extra-info {
@@ -179,8 +191,19 @@
 }
 
 @media screen and (max-width: 524px) {
+  .experience {
+    background-color: #1a1a1a;
+    z-index: 14;
+    border-radius: 10px;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+
   .experience-description p {
     font-size: 0.6rem;
+    text-align: center;
   }
 
   .experience-description p:not(.tag) {
@@ -194,6 +217,8 @@
 
   .experience-header {
     margin: 0 auto 15px auto;
+    width: 180px;
+    bottom: 25px;
   }
 
   .timeline {
@@ -208,5 +233,7 @@
 
   .extra-informations {
     font-size: 0.8rem;
+    align-items: center;
+    padding-left: 0;
   }
 }
