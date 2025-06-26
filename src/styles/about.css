@@ -39,13 +39,13 @@
   padding: 30px;
   text-align: center;
   backdrop-filter: blur(5px);
-  background-color: var(--TransparentBG);
+  background-color: #6b99007e;
   font-size: 1rem;
   font-family: "Oxianium";
   color: var(--white);
   border-radius: 5px;
   border: 1px solid var(--DarkGreen);
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.377);
+  box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.575);
   transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 

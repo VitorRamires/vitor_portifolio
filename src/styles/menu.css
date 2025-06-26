@@ -8,22 +8,35 @@
   border-radius: 10px;
   padding: 10px 75px;
   backdrop-filter: blur(10px);
-  display: none;
 }
 
 .menu ul {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 6rem;
+  gap: 5rem;
   padding: 25px 0 15px 0;
 }
 
 .menu ul li a {
   color: var(--white);
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-family: "Oxianium";
   font-weight: 200;
+}
+
+.menu ul li a {
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.menu ul li:hover a{
+  background-color: var(--LighterBlack);
+}
+
+.menu ul li.active a {
+  background-color: var(--DarkGreen);
 }
 
 @media screen and (max-width: 748px) {

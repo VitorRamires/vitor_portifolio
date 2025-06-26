@@ -45,7 +45,7 @@ export function InfoBanner({ name }: InfoBannerProps) {
           <motion.span
             initial="hidden"
             animate="visible"
-            transition={{ staggerChildren: 0.05 }}
+            transition={{ staggerChildren: 0.08 }}
             onAnimationComplete={() => setClassAdded(true)}
           >
             {name.split("").map((char, idx) => (
@@ -61,7 +61,7 @@ export function InfoBanner({ name }: InfoBannerProps) {
           initial="hidden"
           animate="visible"
           className="role"
-          transition={{ delay: 0.8, duration: .3 }}
+          transition={{ delay: 0.8, duration: 0.3 }}
         >
           FRONT-END DEVELOPER
         </motion.p>
@@ -72,8 +72,15 @@ export function InfoBanner({ name }: InfoBannerProps) {
           animate="visible"
           transition={{ staggerChildren: 0.1, delayChildren: 0.8 }}
         >
-          <motion.img src={linkedin} variants={linksVariants} alt="" />
-          <motion.img src={github} variants={linksVariants} alt="" />
+          <a
+            href="https://www.linkedin.com/in/vitor-ramires-1a6b051bb/"
+            target="#"
+          >
+            <motion.img src={linkedin} variants={linksVariants} alt="" />
+          </a>
+          <a href="https://github.com/VitorRamires" target="#">
+            <motion.img src={github} variants={linksVariants} alt="" />
+          </a>
         </motion.div>
       </div>
     </section>
