@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 6rem;
-
   color: var(--textColor);
   margin: 6rem 0;
 }
@@ -64,16 +63,13 @@
 #about button {
   width: 250px;
   max-width: 100%;
-
   padding: 12px;
   margin-top: 25px;
-
   font-size: 1.05rem;
   background-color: var(--LighterBlack);
   border: 1px solid var(--DarkGreen);
   border-radius: 5px;
   color: var(--white);
-
   cursor: pointer;
   transition: 0.2s;
 

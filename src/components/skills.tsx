@@ -3,6 +3,7 @@ import { Title } from "./title";
 import { SkillsData } from "../data/skills";
 import { motion, useInView } from "framer-motion";
 import arrow from "../assets/icons/arrow.svg";
+import { Skill } from "./skill";
 
 export function Skills() {
   const animRef = useRef(null);
@@ -23,7 +24,7 @@ export function Skills() {
       opacity: 0,
     },
     visibleDecoration: {
-      width: 450,
+      width: 40 + "%",
       opacity: 1,
     },
   };
@@ -59,7 +60,7 @@ export function Skills() {
               0,
               Math.PI * 1.5
             );
-            canvasContext.fillStyle = "#6b9900";
+            canvasContext.fillStyle = "#b3ff00";
             canvasContext.fill();
             particle.x += particle.dx;
             particle.y += particle.dy;
@@ -95,18 +96,14 @@ export function Skills() {
             transition={{ duration: 0.5 }}
             className="skills-box"
           >
-            <motion.ul
-              variants={animationSkills}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
+            <motion.ul>
               {SkillsData.map((skill, index) => {
                 return (
-                  <li key={index}>
-                    <img src={skill.source} />
-                    <p>{skill.tech}</p>
-                  </li>
+                  <Skill
+                    skill={skill}
+                    key={index}
+                    animationSkills={animationSkills}
+                  />
                 );
               })}
             </motion.ul>

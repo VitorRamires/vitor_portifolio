@@ -46,19 +46,19 @@ export function Experience({ exp }: { exp: ExpInterface }) {
           <div className="extra-informations">
             <p className="item-extra-info">
               <span>
-                <img src={geo} alt="" />
+                <img src={geo} alt="localization icon" />
               </span>
               {exp.location}
             </p>
             <p className="item-extra-info">
               <span>
-                <img src={badge} alt="" />
+                <img src={badge} alt="role icon" />
               </span>
               {exp.role}
             </p>
             <p className="item-extra-info">
               <span>
-                <img src={calendar} alt="" />
+                <img src={calendar} alt="calendar icon" />
               </span>
               {exp.time}
             </p>

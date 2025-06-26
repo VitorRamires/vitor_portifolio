@@ -37,7 +37,7 @@ export function Project({ project }: ProjectProps) {
     >
       <div className="project-img">
         <a href={project.hyperlink} target="#">
-          <img src={project.image} alt="project-image" />
+          <img src={project.image} alt="project image" />
         </a>
         <div className="tags">
           {project.tags.map((tag, index) => {

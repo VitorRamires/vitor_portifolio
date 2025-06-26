@@ -76,10 +76,10 @@ export function InfoBanner({ name }: InfoBannerProps) {
             href="https://www.linkedin.com/in/vitor-ramires-1a6b051bb/"
             target="#"
           >
-            <motion.img src={linkedin} variants={linksVariants} alt="" />
+            <motion.img src={linkedin} variants={linksVariants} alt="linkedin icon" />
           </a>
           <a href="https://github.com/VitorRamires" target="#">
-            <motion.img src={github} variants={linksVariants} alt="" />
+            <motion.img src={github} variants={linksVariants} alt="github icon" />
           </a>
         </motion.div>
       </div>

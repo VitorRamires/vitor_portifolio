@@ -27,11 +27,11 @@ export function About() {
   const bannerAbout = {
     hiddenLeft: {
       opacity: 0,
-      x: -55,
+      x: -25,
     },
     hiddenRight: {
       opacity: 0,
-      x: 55,
+      x: 25,
     },
     visible: {
       opacity: 1,

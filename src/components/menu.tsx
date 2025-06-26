@@ -9,6 +9,11 @@ export function Menu() {
     { id: "experiences", name: "Experiências" },
   ];
   const [active, setActive] = useState("home");
+  const [opened, setOpened] = useState(false);
+
+  function toogleMenu() {
+    setOpened(!opened);
+  }
 
   useEffect(() => {
     const scrollWatcher = () => {
@@ -29,7 +34,12 @@ export function Menu() {
   }, []);
 
   return (
-    <div className="menu">
+    <div className={`menu ${opened ? "menu-opened" : ""}`}>
+      <div className="hamburguer" onClick={toogleMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <ul>
         {links.map((link, index) => {
           return (

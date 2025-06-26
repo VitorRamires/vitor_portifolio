@@ -75,15 +75,6 @@
   background: var(--MainGreen);
 }
 
-.line:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.line:nth-child(2) {
-  transform: rotate(90deg);
-}
 
 .extra-informations {
   position: relative;
