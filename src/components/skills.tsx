@@ -24,7 +24,7 @@ export function Skills() {
       opacity: 0,
     },
     visibleDecoration: {
-      width: 40 + "%",
+      width: 40 + "vw",
       opacity: 1,
     },
   };

@@ -10,6 +10,7 @@ export function About() {
   const animRef = useRef(null);
   const inView = useInView(animRef, { amount: 0.35, once: true });
 
+  // Mouse movement
   function affectDegree(event: React.MouseEvent<HTMLDivElement>) {
     if (!divRef.current) return;
 
@@ -70,12 +71,12 @@ export function About() {
               Sou desenvolvedor Front-end apaixonado por tecnologia, natural de
               Porto Alegre, Rio Grande do Sul. Sempre busco unir criatividade e
               técnica para entregar soluções digitais eficazes. Atualmente
-              minhas principais tencologia são HTML5, CSS3, JavaScript e
+              minhas principais tencologias são HTML5, CSS3, JavaScript e
               React.js. Mas procuro estar sempre estudando outras ferramentas e
               linguagens.
             </p>
             <p>
-              Já tive algumas experiencias profisionais como desenvolvimento de
+              Já tive algumas experiencias profissionais como desenvolvimento de
               banners publicitários e materiais digitais para marcas de alto
               impacto, suporte técnico em banco de dados ajudando na
               identificação e resolução de bugs junto aos clientes e atualmente,
