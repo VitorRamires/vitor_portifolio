@@ -1,5 +1,6 @@
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
+import project3 from "../assets/images/project3.png";
 
 export const ProjectsData = [
   {
@@ -19,5 +20,15 @@ export const ProjectsData = [
     image: project2,
     tags: ["React", "React-hook-form", "Localhost", "React-Router"],
     hyperlink: "https://bookguard.netlify.app/",
+  },
+  {
+    name: "Avanti Ecommerce",
+    description: `Interface desenvolvida com HTML, CSS e JavaScript, inspirada na identidade visual da marca Avanti. 
+    O projeto conta com uma homepage responsiva e visualmente atrativa, destacando banners, seções promocionais e 
+    produtos em destaque. O objetivo é expandir o projeto com novas telas, como páginas de produto, carrinho de 
+    compras e checkout, além da implementação de funcionalidades como filtros, integração com APIs e armazenamento de dados.`,
+    image: project3,
+    tags: ["HTML", "CSS", "Javascript"],
+    hyperlink: "https://avannti-ecommerce.netlify.app/",
   },
 ];
