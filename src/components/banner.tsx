@@ -74,11 +74,11 @@ export function InfoBanner({ name }: InfoBannerProps) {
         >
           <a
             href="https://www.linkedin.com/in/vitor-ramires-1a6b051bb/"
-            target="#"
+            target="_blank"
           >
             <motion.img src={linkedin} variants={linksVariants} alt="linkedin icon" />
           </a>
-          <a href="https://github.com/VitorRamires" target="#">
+          <a href="https://github.com/VitorRamires" target="_blank">
             <motion.img src={github} variants={linksVariants} alt="github icon" />
           </a>
         </motion.div>
