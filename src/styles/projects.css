@@ -19,6 +19,7 @@
 .projects-box {
   text-align: start;
   color: var(--textColor);
+  margin-bottom: 20px;
 }
 
 

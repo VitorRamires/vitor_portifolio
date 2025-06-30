@@ -11,6 +11,7 @@ export function Menu() {
   const [active, setActive] = useState("home");
   const [opened, setOpened] = useState(false);
 
+
   function toogleMenu() {
     setOpened(!opened);
   }
