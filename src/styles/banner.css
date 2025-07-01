@@ -104,7 +104,11 @@
   }
 }
 
-
+@media screen and (max-width: 748px) {
+  #info-banner {
+    padding: 10rem 0;
+  }
+}
 
 @media screen and (max-width: 530px) {
   .banner-titles .name {

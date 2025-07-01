@@ -84,10 +84,16 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-   width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
 
+@media screen and (max-width: 748px) {
+  #particleCanvas,
+  #skills .decoration {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .skills-box {
