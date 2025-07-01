@@ -28,8 +28,10 @@
 .resume-wrapper{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   margin-top:35px;
+  
 }
 
 .about-soft_skills ul {
