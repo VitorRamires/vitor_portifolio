@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  padding: 20rem 0;
+  padding: 280px 0;
 }
 
 .overlay-banner {
@@ -117,10 +117,6 @@
 
   .banner-titles .role {
     font-size: 1.5rem;
-  }
-
-  #info-banner {
-    padding: 40vh 0;
   }
 }
 

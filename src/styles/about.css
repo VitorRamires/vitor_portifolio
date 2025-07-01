@@ -25,13 +25,12 @@
   margin: 15px 0;
 }
 
-.resume-wrapper{
+.resume-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 25px;
-  margin-top:35px;
-  
+  margin-top: 35px;
 }
 
 .about-soft_skills ul {
@@ -123,5 +122,11 @@
 @media screen and (max-width: 572px) {
   .about-info {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .resume-wrapper {
+    justify-content: center;
   }
 }

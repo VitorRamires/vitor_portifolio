@@ -17,7 +17,6 @@ export function Skills() {
     visible: {
       scale: 1,
       opacity: 1,
-      type: "tween" as const,
     },
     hiddenDecoration: {
       width: 0,
@@ -89,13 +88,7 @@ export function Skills() {
       <div className="center">
         <div className="skills-wrapper">
           <Title synonim="Habilidades" title="Skills Técnicas" />
-          <motion.div
-            variants={animationSkills}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.5 }}
-            className="skills-box"
-          >
+          <div className="skills-box">
             <motion.ul>
               {SkillsData.map((skill, index) => {
                 return (
@@ -107,7 +100,7 @@ export function Skills() {
                 );
               })}
             </motion.ul>
-          </motion.div>
+          </div>
         </div>
       </div>
       <div className="arrow">
