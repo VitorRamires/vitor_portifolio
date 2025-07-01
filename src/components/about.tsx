@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Title } from "./title";
 import { motion, useInView } from "framer-motion";
 import curriculum from "../assets/pdf/Curriculo Desenvolvedor - Vitor Ramires 2025.pdf";
+import curriculumEN from "../assets/pdf/Resume Developer - Vitor Ramires.pdf";
 
 export function About() {
   const [axisX, setAxisX] = useState(0);
@@ -84,14 +85,23 @@ export function About() {
               de gestão jurídica, e sigo me aperfeiçoando por meio de projetos
               pessoais e cursos focados em frameworks modernos.
             </p>
+          </motion.div>
+          <div className="resume-wrapper">
             <a
               href={curriculum}
               download="Curriculo Desenvolvedor - Vitor Ramires"
               target="#"
             >
-              <button>Baixar Currículo</button>
+              <button>Currículo - PT/BR</button>
             </a>
-          </motion.div>
+            <a
+              href={curriculumEN}
+              download="Resume Developer - Vitor Ramires"
+              target="#"
+            >
+              <button>Resume - EN</button>
+            </a>
+          </div>
         </motion.div>
         <div className="about-soft_skills">
           <motion.div

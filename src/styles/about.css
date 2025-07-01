@@ -25,6 +25,13 @@
   margin: 15px 0;
 }
 
+.resume-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top:35px;
+}
+
 .about-soft_skills ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -60,10 +67,9 @@
 }
 
 #about button {
-  width: 250px;
+  width: 220px;
   max-width: 100%;
   padding: 12px;
-  margin-top: 25px;
   font-size: 1.05rem;
   background-color: var(--LighterBlack);
   border: 1px solid var(--DarkGreen);
