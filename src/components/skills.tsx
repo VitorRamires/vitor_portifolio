@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import { Title } from "./title";
 import { SkillsData } from "../data/skills";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import arrow from "../assets/icons/arrow.svg";
 import { Skill } from "./skill";
 
 export function Skills() {
   const animRef = useRef(null);
-  const inView = useInView(animRef, { amount: 0.25, once: true });
+
 
   const animationSkills = {
     hidden: {
@@ -18,17 +18,9 @@ export function Skills() {
       scale: 1,
       opacity: 1,
     },
-    hiddenDecoration: {
-      width: 0,
-      opacity: 0,
-    },
-    visibleDecoration: {
-      width: 40 + "vw",
-      opacity: 1,
-    },
   };
 
-  // animation particles
+  // animation particles'
   useEffect(() => {
     const canvas = document.getElementById(
       "particleCanvas"
@@ -59,7 +51,7 @@ export function Skills() {
               0,
               Math.PI * 1.5
             );
-            canvasContext.fillStyle = "#b3ff00";
+            canvasContext.fillStyle = "#6b9900";
             canvasContext.fill();
             particle.x += particle.dx;
             particle.y += particle.dy;
@@ -76,15 +68,9 @@ export function Skills() {
 
   return (
     <motion.section id="skills" ref={animRef}>
-      <motion.div
-        variants={animationSkills}
-        initial="hiddenDecoration"
-        animate={inView ? "visibleDecoration" : "hiddenDecoration"}
-        transition={{ duration: 0.3 }}
-        className="decoration"
-      >
+      <div className="decoration">
         <canvas id="particleCanvas"></canvas>
-      </motion.div>
+      </div>
       <div className="center">
         <div className="skills-wrapper">
           <Title synonim="Habilidades" title="Skills Técnicas" />

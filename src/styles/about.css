@@ -64,7 +64,6 @@
   height: 70%;
   filter: blur(45px);
   background-color: var(--MainGreen);
-  animation: animationBlur 3s ease-in infinite;
 }
 
 #about button {
@@ -87,22 +86,7 @@
   box-shadow: 5px 5px 0 0 var(--DarkGreen);
 }
 
-@keyframes animationBlur {
-  0% {
-    filter: blur(45px);
-    background-color: var(--MainGreen);
-  }
 
-  50% {
-    filter: blur(35px);
-    background-color: var(--DarkGreen);
-  }
-
-  100% {
-    filter: blur(45px);
-    background-color: var(--MainGreen);
-  }
-}
 
 @media screen and (max-width: 748px) {
   #about {
