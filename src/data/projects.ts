@@ -30,6 +30,6 @@ export const ProjectsData = [
     compras e checkout, além da implementação de funcionalidades como filtros, integração com APIs e armazenamento de dados e migrar a tecnolgia para React ou Vue.js.`,
     image: project3,
     tags: ["HTML", "CSS", "Javascript"],
-    hyperlink: "https://avannti-ecommerce.netlify.app/",
+    hyperlink: "https://hypecloth.netlify.app/",
   },
 ];
