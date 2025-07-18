@@ -10,7 +10,7 @@ export const ProjectsData = [
     de animação e internacionalização `,
     image: project1,
     tags: ["React", "Typescript", "i18n", "Motion-frame", "React-Router"],
-    hyperlink: "https://lucasramires.netlify.app/",
+    hyperlink: "https://lmramiresconsultoria.com/",
   },
   {
     name: "Bookguard",
