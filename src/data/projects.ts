@@ -1,6 +1,6 @@
 import project1 from "../assets/images/project1.avif";
 import project2 from "../assets/images/project2.avif";
-import project3 from "../assets/images/project3.avif";
+
 
 export const ProjectsData = [
   {
@@ -20,16 +20,5 @@ export const ProjectsData = [
     image: project2,
     tags: ["React", "React-hook-form", "Localhost", "React-Router"],
     hyperlink: "https://bookguard.netlify.app/",
-  },
-  {
-    name: "HypeCloth Ecommerce",
-    description: `Interface desenvolvida com HTML, CSS e JavaScript. 
-    O projeto conta com uma homepage responsiva e visualmente atrativa, destacando banners, seções promocionais e 
-    produtos em destaque. Entretanto, o projeto ainda está sendo desenvolvido, então algumas coisas podem mudar. 
-    O objetivo é futuramente expandir o projeto com novas telas, como páginas de produto, carrinho de 
-    compras e checkout, além da implementação de funcionalidades como filtros, integração com APIs e armazenamento de dados e migrar a tecnolgia para React ou Vue.js.`,
-    image: project3,
-    tags: ["HTML", "CSS", "Javascript"],
-    hyperlink: "https://hypecloth.netlify.app/",
   },
 ];

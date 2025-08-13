@@ -1,11 +1,10 @@
 import { ProjectsData } from "../data/projects";
-import { motion} from "framer-motion";
 import { Title } from "./title";
 import { Project } from "./project";
 
 export function Projects() {
   return (
-    <motion.section id="projects">
+    <section id="projects">
       <div className="center">
         <Title synonim="Portifólio" title="Projetos" />
         <div className="projects-wrapper">
@@ -14,6 +13,6 @@ export function Projects() {
           })}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
