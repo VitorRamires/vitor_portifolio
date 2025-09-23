@@ -4,6 +4,7 @@
   justify-content: space-between;
   gap: 6rem;
   color: var(--textColor);
+  padding-bottom: 6rem;
 }
 
 .about-info,
@@ -86,9 +87,7 @@
   box-shadow: 5px 5px 0 0 var(--DarkGreen);
 }
 
-
-
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 1200px) {
   #about {
     flex-wrap: wrap;
   }
@@ -100,6 +99,12 @@
   .about-info,
   .about-soft_skills {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  #about {
+    padding-bottom: 3rem;
   }
 }
 

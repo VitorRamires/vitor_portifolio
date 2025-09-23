@@ -23,7 +23,7 @@ export function Menu() {
         const menuElement = document.getElementById(link.id);
         if (menuElement) {
           const rectTopElement = menuElement.getBoundingClientRect().top;
-          if (rectTopElement <= window.innerHeight / 1.8) {
+          if (rectTopElement <= window.innerHeight / 2) {
             currentSection = link.id;
           }
         }
