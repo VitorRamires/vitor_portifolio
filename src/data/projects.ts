@@ -1,6 +1,6 @@
 import project1 from "../assets/images/project1.avif";
 import project2 from "../assets/images/project2.avif";
-
+import project3 from "../assets/images/project3.avif";
 
 export const ProjectsData = [
   {
@@ -20,5 +20,14 @@ export const ProjectsData = [
     image: project2,
     tags: ["React", "React-hook-form", "Localhost", "React-Router"],
     hyperlink: "https://bookguard.netlify.app/",
+  },
+  {
+    name: "Hypecloth",
+    description: `Aplicação desenvolvida com Javascript. O objetivo é simular uma homepage de um ecommerce focados em roupas. A interface atualmente
+    tem algumas interações, mas elá será evoluida para uma aplicação e-commerce completa, que será migrada para React como a principal tecnologia utilizada. 
+    `,
+    image: project3,
+    tags: ["React", "Javascript", "CSS3", "HTML5"],
+    hyperlink: "https://hypecloth.netlify.app/",
   },
 ];
