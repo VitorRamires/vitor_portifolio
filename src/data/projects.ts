@@ -1,10 +1,11 @@
 import project1 from "../assets/images/project1.avif";
 import project2 from "../assets/images/project2.avif";
 import project3 from "../assets/images/project3.avif";
+import project4 from "../assets/images/leatnetwork.png"
 
 export const ProjectsData = [
   {
-    name: "Lucas Ramires - Site institucional",
+    name: "LM Consultoria",
     description: `Portifólio para um gerente de projetos, com objetivo de ajudar a alavancar a relevância do mesmo a nivel nacional e internacional, 
     mostrando de forma direta e resumida sua experiência e trajetória profissional. Projeto foi realizado através das tecnologias Typescript, React, CSS3 e bibliotecas
     de animação e internacionalização `,
@@ -27,7 +28,17 @@ export const ProjectsData = [
     tem algumas interações, mas elá será evoluida para uma aplicação e-commerce completa, que será migrada para React como a principal tecnologia utilizada. 
     `,
     image: project3,
-    tags: ["React", "Javascript", "CSS3", "HTML5"],
+    tags: ["Javascript", "CSS3", "HTML5"],
     hyperlink: "https://hypecloth.netlify.app/",
+  },
+  {
+    name: "Leap network",
+    description: `Neste projeto, desenvolvi uma rede social dinâmica utilizando React.js, focada em oferecer uma experiência de usuário fluida e reativa. 
+    O desafio central foi integrar uma API REST externa com operações de CRUD completo (Criação, Leitura, Atualização e Deleção), 
+    garantindo que a interface refletisse as mudanças de estado instantaneamente. 
+    `,
+    image: project4,
+    tags: ["React", "Date-fns", "Localstorage"],
+    hyperlink: "https://leapnetwork.netlify.app/",
   },
 ];
