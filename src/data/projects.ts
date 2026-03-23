@@ -1,7 +1,7 @@
 import project1 from "../assets/images/project1.avif";
 import project2 from "../assets/images/project2.avif";
 import project3 from "../assets/images/project3.avif";
-import project4 from "../assets/images/leatnetwork.png"
+import project4 from "../assets/images/leatnetwork.avif"
 
 export const ProjectsData = [
   {
