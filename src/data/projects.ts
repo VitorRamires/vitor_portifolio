@@ -19,7 +19,7 @@ export const ProjectsData = [
     A interface foi construída com Radix UI e styled-components, garantindo um design moderno, acessível e responsivo. Os dados dos 
     livros são armazenados localmente no navegador utilizando o Local Storage.`,
     image: project2,
-    tags: ["React", "React-hook-form", "Localhost", "React-Router"],
+    tags: ["React", "React-hook-form", "LocarStorage", "React-Router"],
     hyperlink: "https://bookguard.netlify.app/",
   },
   {
@@ -38,7 +38,7 @@ export const ProjectsData = [
     garantindo que a interface refletisse as mudanças de estado instantaneamente. 
     `,
     image: project4,
-    tags: ["React", "Date-fns", "Localstorage"],
+    tags: ["React", "Date-fns", "Localstorage", "REST API"],
     hyperlink: "https://leapnetwork.netlify.app/",
   },
 ];

@@ -16,7 +16,7 @@ export const experiencesData = [
 
   {
     company: "Digital Business",
-    time: `2021 - 2023`,
+    time: `2022 - 2023`,
     location: "Brasil - RS",
     role: "Desenvolvedor Front-end",
     description: [
