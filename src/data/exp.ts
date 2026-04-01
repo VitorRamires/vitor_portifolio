@@ -20,12 +20,14 @@ export const experiencesData = [
     location: "Brasil - RS",
     role: "Desenvolvedor Front-end",
     description: [
-      `Especialista no desenvolvimento de produtos digitais de alta performance para clientes globais como Microsoft, Sony e Hyundai. 
-      Foquei na criação de experiências visuais ricas utilizando GSAP para animações complexas e otimização de renderização. Realizei a integração 
-      de APIs REST em tempo real e desenvolvi temas customizados em WordPress, equilibrando fidelidade visual extrema com performance técnica sob alta 
-      carga de acessos.`,
+      `Atuei no desenvolvimento de interfaces de alto impacto utilizando React.js, TypeScript e JavaScript (ES6+), sendo responsável pela entrega de produtos 
+      digitais para marcas globais como Microsoft, Sony e Hyundai. O foco do trabalho consistiu em converter designs complexos 
+      em código de alta performance, garantindo fidelidade visual absoluta aos protótipos e aprovação em auditorias rigorosas de QA e Design System. 
+      No desenvolvimento das interfaces, utilizei GSAP para a criação de animações e interações fluidas, priorizando a otimização da renderização 
+      para manter o desempenho em diferentes tipos de hardware. Além disso, assegurei a integridade das aplicações através de testes cross-browser 
+      com BrowserStack, garantindo que as funcionalidades críticas permanecessem estáveis em múltiplos dispositivos e sob alto volume de acessos."`,
     ],
-    tags: ["Javascript", "HTML", "CSS3", "GSAP", "Browserstack", "REST APIs"],
+    tags: ["Javascript", "HTML", "CSS3", "GSAP", "Browserstack"],
   },
 
   {

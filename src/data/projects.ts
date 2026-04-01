@@ -1,11 +1,11 @@
 import project1 from "../assets/images/project1.avif";
 import project2 from "../assets/images/project2.avif";
 import project3 from "../assets/images/project3.avif";
-import project4 from "../assets/images/leatnetwork.avif"
+import project4 from "../assets/images/project4.avif"
 
 export const ProjectsData = [
   {
-    name: "LM Consultoria",
+    name: "LR Consultoria",
     description: `Portifólio para um gerente de projetos, com objetivo de ajudar a alavancar a relevância do mesmo a nivel nacional e internacional, 
     mostrando de forma direta e resumida sua experiência e trajetória profissional. Projeto foi realizado através das tecnologias Typescript, React, CSS3 e bibliotecas
     de animação e internacionalização `,
