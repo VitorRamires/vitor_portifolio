@@ -1,7 +1,7 @@
 export const experiencesData = [
   {
     company: "Tintitech",
-    time: `2024 - Até o momento`,
+    time: `2024 - 2026`,
     location: "Brasil - RS",
     role: "Desenvolvedor Front-end",
     description: [
